@@ -1,0 +1,65 @@
+$icons: (0:0)
+$icons: map-merge($icons,('design': (X: 0px, Y:-103px, W: 114px, H: 109px, TW: 362px, TH: 212px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('gift': (X: -168px, Y:0px, W: 100px, H: 110px, TW: 362px, TH: 212px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('logistick': (X: 0px, Y:0px, W: 158px, H: 93px, TW: 362px, TH: 212px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('nature': (X: -278px, Y:0px, W: 84px, H: 117px, TW: 362px, TH: 212px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+//
+//.icon-design
+//  width: 114px
+//  height: 109px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -103px
+//
+//.icon-gift
+//  width: 100px
+//  height: 110px
+//  background-image: url('../img/sprite.png')
+//  background-position: -168px 0px
+//
+//.icon-logistick
+//  width: 158px
+//  height: 93px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px 0px
+//
+//.icon-nature
+//  width: 84px
+//  height: 117px
+//  background-image: url('../img/sprite.png')
+//  background-position: -278px 0px
+//

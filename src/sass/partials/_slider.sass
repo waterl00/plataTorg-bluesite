@@ -1,0 +1,79 @@
+
+.slider
+	position: relative
+	height: 100vh
+.slider__slides
+	height: 100vh
+.slide
+	background-position: 50% 50%
+	-webkit-background-size: 100%
+	 -o-background-size: 100% 100%
+	 background-size: 100% 
+	backround-repeat: no-repeat
+	padding: 275px 0 288px
+	height: 100vh
+.slider__next,
+.slider__prev
+	display: inline-block
+	background: url('../img/arrow.png') 0 0 no-repeat
+	background-size: cover
+	width: 26px
+	height: 48px
+	position: absolute
+	top: 50%
+	z-index: 9
+	margin-top: -106px
+.slider__prev
+	left: 100px
+	transform: rotate(180deg)
+.slider__next
+	right: 100px
+.dots
+	position: absolute
+	left: 50%
+	z-index: 8
+	bottom: 140px
+	li
+		display: inline-block
+		width: 20px;
+		height: 20px;
+		box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+		background-color: #ffffff;
+		border-radius: 50%
+		z-index: 9
+		text-indent: -9999px
+		margin-right: 10px
+.slide__title
+	color: #fff
+	display: inline-block
+	font-family: Akrobatbold
+	font-size: 78px
+	position: relative
+	padding-right: 20px
+	padding-bottom: 18px
+	border-bottom: 2px solid #ffd357
+	&_blue
+		border-color: #4890bd
+	&_black
+		color: #3b3b3b
+
+.slide__sub-title
+	color: #fff
+	font-family: Akrobat 
+	display: block
+	font-size: 60px
+	margin-bottom: 50px
+	font-variant: small-caps
+	&_black
+		color: #3b3b3b
+.slide__btn
+	padding: 15px 38px
+	font-family: Akrobatbold
+	font-size: 21px
+	color: #3b3b3b
+	text-transform: uppercase
+	background-color: #ffd357
+	border-radius: 20px
+	&_blue
+		background-color: #4890bd
+		color: #fff
