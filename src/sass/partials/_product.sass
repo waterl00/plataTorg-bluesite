@@ -1,21 +1,45 @@
 .product
+	.container
+		position: relative
 	&__title
 		text-align: center
 		font-family: Akrobatbold
 		font-size: 36px
 		text-transform: uppercase
-		margin-bottom: 57px
+		margin-bottom: 67px
 		&_blue
 			font-family: Akrobat
 			color: #4890bd
 		&_extra
 			font-family: Akrobat
+	&__sale
+		position: absolute
+		color: red
+		top: -73px
+		right: 163px
+		font-family: KobzarKS
+		color: #d24a43
+	&__sale-size
+		font-size: 110px
+		letter-spacing: 5.42px
+	&__sale-caption
+		font-size: 17px
+		line-height: 1em
+		letter-spacing: 0.89px
+		transform: rotate(-25deg)
+		position: relative
+		top: -123px
+		right: -107px
+		text-align: center
+		letter-spacing: 0.89px
+
 	&__content
-		display: flex
+		vertical-align: top
+		+clr
+
 	&__image
-		margin-top: 45px
-		margin-right: -40px
 		z-index: 10
+		float: left
 		position: relative
 		&:after
 			display: block
@@ -28,66 +52,131 @@
 			left: 10px
 			right: 10px
 	&__stock
-		padding: 40px 0 40px
+		display: inline-block
 		box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.25)
 		border: 1px solid rgba(0, 0, 0, 0.75)
 		background-color: #808080
-		height: 378px
+		text-align: center
+		width: 343px
+		position: relative
+		left: -40px
+		top: -50px
+		z-index: 1 
 	&__remainder
-
-
-.product-stock
-	&__title
-		color: #ffffff
-		font-family: "Akrobatbold"
-		font-size: 50px
-		font-weight: bold
-		text-transform: uppercase
-		letter-spacing: 2.44px
-		padding-left: 96px
-		span
-			display: inline-block
-			border-bottom: 1px solid blue
-			padding-bottom: 10px
-	&__text
-		background-color: #767676
-		padding-left: 96px
-		color: #e7e0d6
-		font-family: Akrobat
-		font-size: 24px
-		font-weight: 400
-		text-transform: uppercase
-		letter-spacing: 1.17px
-	&__bottom
-		background-color: #767676
-		+clr
-	&__old-price
-		text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.15)
-		color: #fd7979
-		font-family: Akrobat
-		font-size: 49px
-		font-weight: bold
-		text-transform: uppercase
-		letter-spacing: 2.39px
-		float: left
-		margin-left: 78px
-	&__buttons
-		float: right
-		padding: 0 42px 0 42px
-	&__button
-		display: block
-		width: 158px
-		height: 46px
-		border: 2px solid #ffd357
-		color: #fff
-		border-radius: 25px
-		background-color: transparent 
-		line-height: 25px 
-		font-family: Akrobatbold
-		font-size: 18px
-		text-transform: uppercase
-		margin-bottom: 24px
-		&_consultation
-			color: #3b3b3b
+		padding: 20px 10px 0 10px
+		display: inline-block
+		background-color: #ECEDED
+		position: relative
+		top: -10px
+		left: -45px
+		right: 0
+	.product-stock
+		padding-top: 28px
+		&__title
+			color: #ffffff;
+			font-family: Akrobatbold
+			background-color: #808080 
+			/*SemiBold*/
+			font-size: 48px
+			text-transform: uppercase
+			letter-spacing: 2.92px
+			padding-bottom: 6px
+			position: relative
+			&:after
+				display: block
+				content: ''
+				position: absolute
+				height: 2px
+				width: 114px
+				background-color: #3eb5f1;
+				bottom: 0
+				left: 50%
+				transform: translate(-50%, 0)
+		&__content
+			background-color: #767676
+		&__text
+			color: #e7e0d6;
+			font-family: Akrobat
+			font-size: 18px
+			text-transform: uppercase
+			letter-spacing: 1.09px
+			line-height: 2em
+			&_bg
+				background-color: #808080  
+		&__old-price
+			text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.15);
+			color: #fd7979
+			font-family: Akrobat
+			font-size: 48px
+			font-weight: bold
+			text-transform: uppercase
+			letter-spacing: 2.92px
+			margin-bottom: 23px
+		&__button
+			box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25)
+			border: 1px solid rgba(0, 0, 0, 0.35)
 			background-color: #ffd357
-			font-size: 14px 
+			border-radius: 40px
+			height: 40px
+			padding: 0 23px
+			color: #2d2d2d
+			font-family: Akrobat
+			font-size: 18px
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 0.9px
+			margin-bottom: 20px
+.remainder
+	text-align: center
+	width: 432px
+	&__content
+		padding: 20px
+		text-align: center
+		background-color: #FFF
+		color: #2d2d2d
+		font-family: Akrobat
+		border: 1px solid #53a0cc
+		margin-bottom: 20px
+	&__text
+		margin-top: 20px
+		margin-bottom: 24px
+		color: #2d2d2d
+		font-size: 20px
+		span
+			color: #53a0cc
+	&__phone
+		color: #53a0cc
+		font-size: 24px
+		letter-spacing: 1.2px
+	&__image
+		position: relative
+		left: -10px
+		width: 110%
+		background-color: #FFF 
+		img
+			margin-top: 10px
+.info
+	&__table
+		border: 1px solid transparent
+		background: url('../img/verical.png') 0 50% no-repeat 
+		text-align: center
+		width: 600px
+		margin: 0 auto
+		color: #1f1f1f
+		font-family: Akrobat
+		line-height: 80px
+.info-table
+	td
+		border: 1px solid transparent
+	&__head
+		font-size: 30px
+	&__row
+		font-size: 20px
+	&__row_grow
+		td
+			background-color: #626262
+			color: #fff
+		
+
+
+
