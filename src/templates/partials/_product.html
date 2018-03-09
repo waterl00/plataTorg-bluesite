@@ -9,6 +9,10 @@
 		<div class="product__content">
 			<div class="product__image">
 				<img src="img/product-1.jpg" alt="сосна обыкновенная (EXTRA)">
+				<div class="product__sale-image">
+					<span></span>
+				</div>
+				<div class="product__quality"><img src="img/quality.png" alt=""></div>
 			</div>
 			<div class="product__stock product-stock">
 				<div class="product-stock__title"><span>акция</span></div>
@@ -21,7 +25,7 @@
 			</div>
 			<div class="product__remainder remainder">
 				<div class="remainder__content">
-					<p class="remainder__text s">Быстрая доставка по Москве и Московской области</p>
+					<p class="remainder__text s">Быстрая доставка по Москве и <br>Московской области</p>
 					<p class="remainder__text s">Посадка деревьев за <span>1 день</span></p>
 					<p class="remainder__phone">+7 (495) 764-97-07</p>
 				</div>
@@ -29,28 +33,34 @@
 					<img src="/img/payment.png" alt="">
 				</div>
 			</div>
+			<div class="product__caption caption">
+				<p class="caption__text">Дерево высотой 25—40 м и диаметром ствола 0,5—1,2 м</p>
+				<p class="caption__text caption__text_bold">рекомендовано для посадки в июле</p>
+			</div>
 		</div>
 		<div class="product__info info">
-			<div class="info__title">информация о наличии</div>
-			<table class="info__table info-table">
-				<tr class="info-table__row">
-					<td class="info-table__head">Высота</td>
-					<td>120-140 см</td>
-					<td>140-160 см</td>
-					<td>160-180 см</td>
-					<td>180-200 см</td>
-					<td>220-440 см</td>
-				</tr>
-				<tr class="info-table__row info-table__row_grow">
-					<td class="info-table__head">Цена</td>
-					<td>1000 руб</td>
-					<td>2000 руб</td>
-					<td>3500 руб</td>
-					<td>5990 руб</td>
-					<td>10100 руб</td>
-				</tr>
-			</table>
-			<button class="info__button">купить</button>
+			<div class="info__wrapper">
+				<div class="info__title">информация о наличии</div>
+				<table class="info__table info-table">
+					<tr class="info-table__row info-table__row_first">
+						<td class="info-table__head">Высота</td>
+						<td>120-140 см</td>
+						<td>140-160 см</td>
+						<td>160-180 см</td>
+						<td>180-200 см</td>
+						<td>220-440 см</td>
+					</tr>
+					<tr class="info-table__row info-table__row_grow">
+						<td class="info-table__head">Цена</td>
+						<td class="hov">1000 руб</td>
+						<td class="hov">2000 руб</td>
+						<td class="hov">3500 руб</td>
+						<td class="hov hov-active">5990 руб</td>
+						<td class="hov">10100 руб</td>
+					</tr>
+				</table>
+				<button class="info__button">купить</button>
+			</div>
 		</div>
 	</div>
 </section>

@@ -1,26 +1,36 @@
 .features
+	padding: 115px 0 115px
 	&__list
 		width: 881px
 		margin: 0 auto
 	&__item
-		padding: 0 50px 
-		text-align: center
+		padding: 0 40px
 		display: inline-block
 		width: 24%
 		color: #000000
 		font-family: Akrobat
-		font-size: 16px
+		font-size: 26px
 		font-weight: 300
 		text-transform: uppercase
+		text-align: center
 		&:before
-			display: inline-block
+			display: block
 			content: ''
 			+s(gift)
-			margin-bottom: 35px
+			transform: scale(.5)
 		&_logistick:before
-			margin-left: -25px
+			margin-left: -14px
 			+s(logistick)
 		&_design:before
 			+s(design)
 		&_nature:before
 			+s(nature)
+		&_car-small:before
+			+s(car-small)
+		&_car-manipulator:before
+			+s(car-manipulator)
+		&_car-big:before
+			+s(car-big)
+			margin-left: -20px
+		&_car-croups:before
+			+s(car-croups)

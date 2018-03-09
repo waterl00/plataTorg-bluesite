@@ -1,0 +1,100 @@
+.goods
+	padding: 157px 0 0
+	+r(1400)
+		zoom: .55
+	&__title
+		text-align: center
+		color: #1f1f1f
+		font-family: Akrobat
+		font-size: 60px
+		text-transform: uppercase
+		color: #010101
+		margin-bottom: 58px
+		span
+			color: #4890bd
+	&__sale
+		position: absolute
+		font-size: 20px
+		color: #FFF
+		top: 4px
+		left: -52px
+		width: 250px
+		box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.35)
+		background-color: #ffd357
+		transform: rotate(-30deg)
+		padding: 10px 0
+		text-align: center
+		color: #3b3b3b
+		font-family: "Lucida Sans Unicode"
+		font-size: 37px
+		font-weight: 400
+		text-transform: uppercase
+	&__images-wrapper
+		+clr
+		font-size: 0
+	&__image
+		position: relative
+		width: 539px
+		overflow: hidden
+		&:after
+			display: block
+			content: ''
+			position: absolute
+			top: 7px
+			bottom: 7px
+			right: 7px
+			left: 7px
+			border: 1px solid #fff
+			&:hover img
+				transform: scale(1.1);
+		img
+			transition: all 1s ease-out
+			width: 539px
+		&_big
+			margin-left: 25px
+			float: left
+		&_small
+			float: right
+			margin-right: 25px
+			margin-bottom: 35px
+	&__description
+		+clr
+	&__table
+		float: left
+		width: 539px
+		margin-left: 25px
+		&-head
+			font-family: Akrobatbold
+			background-color: #dcdcdc
+			text-transform: uppercase
+			/*semi bold*/
+		td
+			padding: 17px 0
+			border: 1px solid #000000
+			text-align: center
+			color: #3b3b3b
+			font-family: Akrobat
+			font-size: 26px
+			background-color: #fff
+		td.active
+			background-color: #ffd357
+			span
+				color: #d51a1a
+	&__button
+		float: right
+		margin: 23px 25px 0 0
+		width: 253px
+		border: 2px solid #4890bd
+		text-align: center
+		border-radius: 28px
+		background-color: transparent
+		color: #3b3b3b
+		font-family: Akrobat
+		/*semi bold*/
+		padding: 22px 0
+		font-size: 28px
+		text-transform: uppercase
+
+				
+			
+			

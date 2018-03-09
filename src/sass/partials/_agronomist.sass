@@ -1,0 +1,79 @@
+.agronomist
+	background-color: #525252
+	padding: 58px 0
+	+r(1400)
+		zoom: .95
+	&__heading
+		text-align: center
+		font-family: Akrobat
+		font-size: 60px
+		font-weight: 400
+		text-transform: uppercase
+		color: #e7e0d6
+		margin-bottom: 51px
+		span
+			color: #3eb5f1
+	&__content
+		position: relative
+		+clr
+	&__wrapper
+		width: 440px
+		float: left
+		&_design
+			float: right
+	&__image-wrapper
+		float: right
+		margin-right: 40px
+		position: relative
+		&:after
+			position: absolute
+			display: block
+			content: ''
+			border: 1px solid #fff
+			top: 10px
+			bottom: 10px
+			left: 10px
+			right: 10px
+		&_design
+			position: absolute
+			left: 0
+			bottom: -95px
+			&:after
+				border: none
+	&__title
+		color: #e7e0d6
+		font-family: Akrobat
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 17px
+	&__sub-title
+		color: #3eb5f1
+		font-family: Akrobat
+		font-size: 24px
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 19px
+	&__text
+		color: #fefefe
+		font-family: Akrobat
+		font-size: 16px
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 25px
+		&::last-child
+			margin-bottom: 11px
+	&__button
+		padding: 25px 0
+		background-color: transparent 
+		text-decoration: none
+		width: 253px
+		border: 2px solid #6ac0f3
+		border-radius: 24px
+		color: #ffffff
+		font-family: Akrobatbold
+		/*semi bold*/
+		font-size: 16px
+		text-transform: uppercase
+		&_design
+			margin-bottom: 122px

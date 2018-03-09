@@ -1,0 +1,58 @@
+.slider__next-exclusive,
+.slider__prev-exclusive
+	+s(arrow-exclusive)
+	position: absolute
+	top: 50%
+	margin-top: -21px
+.slider__prev-exclusive
+	left: -60px
+.slider__next-exclusive
+	right: -60px
+	transform: rotate(180deg)
+	
+
+.exclusive
+	padding: 160px 0
+	+r(1400)
+		zoom: .9 
+	&__title
+		color: #2d2d2d
+		font-family: Akrobat
+		font-size: 52px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 60px
+	&__slider
+		position: relative
+	&__slide-wrapper
+		margin: 0 50px 
+	&__image
+		position: relative
+		margin-bottom: 40px
+		img
+			width: 100%
+		&:after
+			display: block
+			content: ''
+			position: absolute
+			top: 10px
+			bottom: 10px
+			right: 10px
+			left: 10px
+			border: 1px solid #fff
+	&__name
+		color: #2d2d2d
+		font-family: Akrobatbold
+		/*semi bold*/
+		font-size: 22px
+		text-transform: uppercase
+		margin-bottom: 5px
+	&__price
+		color: #2d2d2d
+		font-family: Akrobat
+		font-size: 16px
+		text-transform: uppercase
+		font-family: Akrobatbold
+		span
+			font-size: 26px
+			color: #d24a43

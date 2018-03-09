@@ -2758,10 +2758,27 @@ $('.js-hero').slick({
     adaptiveHeight: true
 });
 
+$('.js-hero-exclusive').slick({
+    nextArrow: '.slider__next-exclusive',
+    prevArrow: '.slider__prev-exclusive',
+    slidesToShow: 3
+});
+
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 71) {
         $('.top-line').addClass('fixed');
     } else {
         $('.top-line').removeClass('fixed');
     }
+});
+$('.hov').hover(function () {
+    console.log('sdsdsdsd');
+    $(".hov").removeClass('hov-active');
+    $(this).addClass('hov-active');
+});
+
+$('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 285
 });
