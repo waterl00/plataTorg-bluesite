@@ -1,36 +1,47 @@
 .features
-	padding: 115px 0 115px
+	padding: 80px 0
+	+r(820)
+		padding: 65px 0
+	+r(700)
+		padding: 55px 0
+	+r(400)
+		padding: 40px 0
+	+r(375)
+		display: none
 	&__list
-		width: 881px
+		max-width: 981px
 		margin: 0 auto
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		align-items: baseline
+		align-content: center
 	&__item
-		padding: 0 40px
-		display: inline-block
-		width: 24%
-		color: #000000
-		font-family: Akrobat
-		font-size: 26px
-		font-weight: 300
-		text-transform: uppercase
 		text-align: center
-		&:before
-			display: block
-			content: ''
-			+s(gift)
-			transform: scale(.5)
-		&_logistick:before
-			margin-left: -14px
-			+s(logistick)
-		&_design:before
-			+s(design)
-		&_nature:before
-			+s(nature)
-		&_car-small:before
-			+s(car-small)
-		&_car-manipulator:before
-			+s(car-manipulator)
-		&_car-big:before
-			+s(car-big)
-			margin-left: -20px
-		&_car-croups:before
-			+s(car-croups)
+		p
+			color: #000000
+			font-family: Akrobat
+			font-size: 24px
+			font-weight: 300
+			text-transform: uppercase
+			text-align: center
+			padding: 0 5px 
+			+r(820)
+				font-size: 20px
+			+r(700)
+				font-size: 16px
+			+r(400)
+				font-size: 12px
+		.icon
+			font-size: 60px
+			margin-bottom: 20px
+			+r(820)
+				font-size: 50px
+			+r(700)
+				font-size: 30px
+			+r(400)
+				font-size: 20px
+		span
+			display: inline-block
+		.icon
+			fill: #ddd

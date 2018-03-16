@@ -6,15 +6,21 @@
 	margin-top: -21px
 .slider__prev-exclusive
 	left: -60px
+	+r(1200)
+		left: 50%
+		top: 50%
+		height: 0
 .slider__next-exclusive
 	right: -60px
 	transform: rotate(180deg)
+	+r(1200)
+		right: 50%
+		top: 50%
+		height: 0
 	
 
 .exclusive
-	padding: 160px 0
-	+r(1400)
-		zoom: .9 
+	padding: 80px 0
 	&__title
 		color: #2d2d2d
 		font-family: Akrobat
@@ -22,8 +28,12 @@
 		text-transform: uppercase
 		text-align: center
 		margin-bottom: 60px
+		+r(370)
+			font-size: 40px
 	&__slider
 		position: relative
+	&__slide
+		width: 50px
 	&__slide-wrapper
 		margin: 0 50px 
 	&__image

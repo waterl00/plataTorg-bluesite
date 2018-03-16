@@ -1,37 +1,50 @@
 .small-woods
+	padding:  174px 0
 	font-size: 0
-	padding: 80px 0
-	+r(1400)
-		zoom: 0.7
-	+r(930)
-		zoom: 0.5
-		padding: 60px 0
-	+r(700)
-		zoom: 0.3
-		padding: 60px 0 40px
-	.container
-		position: relative
 	&__item
-		+clr
-		position: relative
-		top: 200px
-		left: -50px
-		+r(700)
-			top: 240px
+		margin-bottom: 400px
+		&:last-child
+			margin-bottom: 0
 	&__image
+		font-size: 0
 		width: 443px
+		position: absolute
+		bottom: 290px
+		left: -413px
+		&_r
+			left: auto
+			right: -413px
+			top: 150px
+			bottom: auto
+	&__stock
+		font-size: 20px
+		width: 379px
+		background-color: #eee
+		margin: 100px auto 0
 		position: relative
-		float: left
-		padding-left: 50px
+		+r(960)
+			position: static
+	&__text
+		padding-left: 40px
 		color: #000000
 		font-family: Akrobat
 		font-size: 34px
 		text-transform: uppercase
-		z-index: 3
-		top: -200px
-		+r(700)
-		&_bottom
-			float: right
+		margin-bottom: 14px
+	&__wrap
+		width: 443px
+		position: relative
+		&:after
+			display: block
+			content: ''
+			position: absolute
+			top: 10px
+			bottom: 10px
+			left: 10px
+			right: 10px
+			border: 1px solid #fff
+		img
+			max-width: 100%
 	&__sale
 		position: absolute
 		width: 101px
@@ -50,24 +63,22 @@
 		// Text style for "-50%"
 		letter-spacing: 2.28px
 		line-height: 105px
-		top: 0px
-		left: 0
-		+r(700)
-			display: none
-.small-woods__image_bottom .small-woods__sale
-	top: auto
-	left: auto
-	right: -101px
-	bottom: -55px
+		top: -60px
+		left: -20px
+		+r(960)
+			position: static
+		&_r
+			top: auto
+			left: auto
+			bottom: -60px
+			right: -20px
 .stock-sw
 	text-align: center
 	background-color: #808080
 	padding: 46px 0 64px
-	width: 379px
-	margin: 0 auto
-	position: relative
-	left: 50px
-	z-index: 1
+	+r(960)
+		padding: 0
+	
 	&__title
 		color: #ffffff
 		font-family: Akrobatbold
@@ -125,9 +136,6 @@
 		text-transform: uppercase
 		letter-spacing: 1.17px
 		padding: 14px 0
-.small-woods__text
-	padding-left: 80px
-	+r(700)
-		padding: 0
-		text-align: center
-		margin-bottom: 10px
+		
+.small-woods__text 
+	color: red

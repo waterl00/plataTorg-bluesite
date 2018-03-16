@@ -1,8 +1,11 @@
 .footer
 	background-color: #525252
 	padding: 85px 0 67px
+	+r(510)
+		padding: 10px
 	&__wrap
 		max-width: 1200px
+		width: 90%
 		margin: 0 auto
 		display: flex
 		-webkit-flex-wrap: wrap
@@ -13,6 +16,9 @@
 		font-family: Akrobat
 		font-size: 16px
 		// Text style for "деревья  ,"
+		+r(720)
+			-webkit-justify-content: center
+			justify-content: center
 	&__title
 		text-transform: uppercase
 		&:after
@@ -23,6 +29,14 @@
 			background-color: #6ac0f3
 			margin-top: 24px
 			margin-bottom: 27px
+	&__item
+		margin: 0 20px 20px 0
+		+r(720)
+			margin-right: 40px
+		&::last-child
+			margin-right: 0
+		+r(510)
+			display: none
 	&__list
 		li
 			margin-bottom: 16px
@@ -36,12 +50,27 @@
 		border: 2px solid #6ac0f3
 		padding: 25px 25px 38px		
 		font-size: 16px
+		+r(510)
+			width: 100%
+			position: relative
+			padding: 25px 25px 38px		
 	&__phone
 		color: #dcdcdc
 		font-family: Akrobatbold
 		margin-bottom: 35px
+		+r(510)
+			display: inline-block
+			margin-right: 20px
 	&__hour-work
 		margin-bottom: 35px
+		position: absolute
+		text-align: center
+		left: 0
+		right: 0
+		top: 55px
+			
 	&__email
 		margin-bottom: 30px
+		+r(510)
+			display: inline-block
 		

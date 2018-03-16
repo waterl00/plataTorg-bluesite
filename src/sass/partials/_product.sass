@@ -1,8 +1,15 @@
 .product
-	padding-bottom: 161px
-	.container
+	&__wrapper
+		max-width: 960px
+		margin: 0 auto
+		max-width: 960px
 		position: relative
-		width: 960px
+		padding-top: 77px
+		+r(1105)
+			max-width: 750px
+		+r(768)
+			padding-top: 40px
+	&__wrap
 	&__title
 		text-align: center
 		font-family: Akrobatbold
@@ -14,67 +21,76 @@
 			color: #4890bd
 		&_extra
 			font-family: Akrobat
+		+r(530)
+			font-size: 20px
+			margin-bottom: 20px 
 	&__sale
-		position: absolute
 		color: red
-		top: 4px
-		right: 104px
 		font-family: KobzarKS
 		color: #d24a43
+		position: absolute
+		top: 0
+		right: 0
+		width: 248px
+		height: 145px
+		+r(1105)
+			display: none
 	&__sale-size
+		position: absolute
 		font-size: 110px
+		line-height: 1
 		letter-spacing: 5.42px
+		top: 0
+		left: 0
 	&__sale-caption
+		position: absolute
+		color: #d24a43
 		font-size: 17px
-		line-height: 1em
-		letter-spacing: 0.89px
 		transform: rotate(-15deg)
-		position: relative
-		top: -53px
-		right: -100px
-		text-align: center
 		letter-spacing: 0.89px
-
-	&__content
-		vertical-align: top
-		margin-bottom:  65px
-		+clr
+		right: 0
+		bottom: 0
+	&__list
+		margin-bottom: 150px
+		display: inline-block
+		+r(1105)
+			margin-bottom: 70px
+			zoom: 0.7
+			position: relative
+			left: 50%
+			transform: translate(-50%, 0)
+		+r(670)
+			zoom: 0.6
+		+r(570)
+			zoom: 0.4
+		+r(500)
+			zoom: 0.35
+		+r(465)
+			zoom: .45
 
 	&__image
-		z-index: 10
+		width: 337px
 		float: left
 		position: relative
-		&:after
-			display: block
-			content: ''
-			display: block
-			position: absolute
-			border: 1px solid #ffffff
-			top: 10px
-			bottom: 10px
-			left: 10px
-			right: 10px
-	&__sale2-image
-		width: 82px
-		height: 82px
-		border: 2px solid #7b7b7b
-		background-color: rgba(249, 248, 255, 0.8)
-		font-family: Akrobatbold
-		/* semibold*/
-		color: #d24a43
-		font-size: 20px
-		z-index: 9 
-		text-transform:
-		z-index: 9 
-		text-transform: uppercase
-		letter-spacing: 2.07px
+		+r(100)
+			margin: 0 auto 20px
+			margin: 0
+			position: static
+			width: 50%
+			float: left
+			height: 200px
+		img
+			max-width: 100%
+			height: 100%
+	&__quality
 		position: absolute
-		margin-left: -41px
-		margin-top: -41px
-		left: 0
-		top: 0
-		text-align: center
-		line-height: 82px
+		right: -11px
+		bottom: -11px
+		z-index: 9
+		+r(780)
+			display: none
+			bottom: 0
+			right: 0
 	&__sale-image
 		width: 76px
 		height: 76px
@@ -82,165 +98,203 @@
 		padding: 17px 7px;
 		display: inline-block;
 		text-align: center;
-		left: 0
-		top: 0
-		transform: translate(-50%,-50%)
+		left: -38px
+		top: -38px
 		border: 2px solid #7b7b7b;
 		background-color: rgba(249, 248, 255, 0.8)
+		+r(780)
+			display: none
 		span
-			display: block;
-			font-size: 16px;
-			color: red;
-		.center
-			font-size: 25px;
-			position: relative;
-			padding: 5px 0;
-			text-transform: uppercase;
-		.center:after,
-		.center:before
-			display: block;
-			position: absolute;
-			content: '';
-			width: 70%;
-			height: 2px;
-			background-color: #d24a43;
-			left: 50%;
-			transform: translate(-50%, 0);
-		.center:after
-			bottom: 0px;
-		.center:before
-			top: 4px;
-	&__quality
-		position: absolute
-		right: 0
-		bottom: 0
-		margin-right: -38px
-		margin-bottom: -38px
-		z-index: 9
-		
+			display: block
+			color: #d24a43
+			font-family: Akrobatbold
+			/*semi*/
+			font-size: 27px
+			text-transform: uppercase
+			letter-spacing: 2.07px
 	&__stock
-		display: inline-block
-		box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.25)
-		border: 1px solid rgba(0, 0, 0, 0.75)
-		background-color: #808080
+		padding: 0 0 0 34px
+		width: 330px
+		float: left
+		margin-left: -34px
+		margin-top: -36px
+		background-color: #7F7F7F
 		text-align: center
-		width: 343px
-		position: relative
-		left: -40px
-		top: -50px
-		z-index: 1 
+		+r(101)
+			float: right
+			margin: 0 0 20px 0
+			padding: 0
+		+r(100)
+			float: right
+			width: 50%
+			margin: 0 auto
+			height: 200px
 	&__remainder
-		padding: 13px 13px 0
-		display: inline-block
-		background-color: #ECEDED
+		margin-top: 60px
+		width: 316px
+		float: left
+		+r(425)
+			float: none
+			position: absolute
+			right: 0
+			bottom: 40px 
+	&__caption
+		position: absolute
+		bottom: 0
+		left: 400px
+		+r(425)
+			bottom: -70px
+			left: 0
+			right: 0
+			text-align: center
+
+.product-stock
+	padding-top: 28px
+	&__title
+		padding-right: 34px
+		color: #ffffff;
+		font-family: Akrobatbold
+		background-color: #808080 
+		/*SemiBold*/
+		font-size: 48px
+		text-transform: uppercase
+		letter-spacing: 2.92px
+		padding-bottom: 6px
 		position: relative
-		top: -58px
-		left: -45px
-		right: 0
-	.caption
-		position: relative
-		left: 40px
-		&__text
-			color: #555
-			font-family: Akrobatbold
+		+r(101)
+			padding: 0
+		+r(100)
+			padding-top: 5px
 			font-size: 24px
-			margin-bottom: 19px
-			&_bold
-				color: #53a0cc
-				text-transform: uppercase
-				margin-bottom: 0
-	.product-stock
-		padding-top: 28px
-		&__title
-			color: #ffffff;
-			font-family: Akrobatbold
-			background-color: #808080 
-			/*SemiBold*/
-			font-size: 48px
-			text-transform: uppercase
-			letter-spacing: 2.92px
-			padding-bottom: 6px
-			position: relative
-			&:after
-				display: block
-				content: ''
-				position: absolute
-				height: 2px
-				width: 114px
-				background-color: #3eb5f1;
-				bottom: 0
-				left: 50%
-				transform: translate(-50%, 0)
-		&__content
-			background-color: #767676
-		&__text
-			color: #e7e0d6;
-			font-family: Akrobat
-			font-size: 18px
-			text-transform: uppercase
-			letter-spacing: 1.09px
-			line-height: 2em
-			&_bg
-				background-color: #808080  
-		&__old-price
-			text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.15);
-			color: #fd7979
-			font-family: Akrobat
-			font-size: 48px
-			font-weight: bold
-			text-transform: uppercase
-			letter-spacing: 2.92px
-			margin-bottom: 23px
-		&__button
-			box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25)
-			border: 1px solid rgba(0, 0, 0, 0.35)
-			background-color: #ffd357
-			border-radius: 40px
-			height: 40px
-			padding: 0 23px
-			color: #2d2d2d
-			font-family: Akrobat
-			font-size: 18px
-			font-weight: 400
-			text-transform: uppercase
-			letter-spacing: 0.9px
-			margin-bottom: 20px
-.remainder
-	text-align: center
-	width: 276px
+			margin-bottom: 5px 
+		&:after
+			display: block
+			content: ''
+			position: absolute
+			height: 2px
+			width: 114px
+			background-color: #3eb5f1;
+			bottom: 0
+			left: 50%
+			transform: translate(-50%, 0)
 	&__content
-		padding: 20px
-		text-align: center
-		background-color: #FFF
+		background-color: #767676
+		padding-right: 34px
+		+r(101)
+			padding: 0
+		+r(100)
+			font-size: 18px
+	&__text
+		color: #e7e0d6;
+		font-family: Akrobat
+		font-size: 18px
+		text-transform: uppercase
+		letter-spacing: 1.09px
+		line-height: 2em
+		+r(101)
+			font-size: 12px
+		&_bg
+			background-color: #808080 
+			margin-right: -34px
+			+r(100)
+				margin: 0
+	&__old-price
+		text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.15);
+		color: #fd7979
+		font-family: Akrobat
+		font-size: 48px
+		font-weight: bold
+		text-transform: uppercase
+		letter-spacing: 2.92px
+		margin-bottom: 23px
+		+r(101)
+			font-size: 24px
+			margin-bottom: 15px
+	&__button
+		box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25)
+		border: 1px solid rgba(0, 0, 0, 0.35)
+		background-color: #ffd357
+		border-radius: 40px
+		padding: 0 3px
 		color: #2d2d2d
 		font-family: Akrobat
-		border: 1px solid #53a0cc
+		font-size: 12px
+		font-weight: 400
+		text-transform: uppercase
+		letter-spacing: 0.9px
 		margin-bottom: 20px
+			
+.remainder
+	background-color: #ECEDED
+	+r(425)
+		background-color: transparent
+	&__wrapper
+		padding: 15px 7px
+		+r(425)
+			padding: 0
+	&__content
+		border: 1px solid #53a0cc
+		padding:  20px
+		text-align: center
+		+r(425)
+			display: none
+			background-color: transparent
 	&__text
 		color: #2d2d2d
-		font-size: 16px
-		margin-bottom: 14px
+		font-family: Akrobat
+		font-size: 18px
+		font-weight: 400
+		letter-spacing: 1px
+		margin-bottom: 20px
 		span
 			color: #53a0cc
+		+r(100)
+			font-size: 16px
 	&__phone
 		color: #53a0cc
+		font-family: Akrobat
 		font-size: 24px
+		font-weight: 400
+		// Text style for "+7 (495) 7"
 		letter-spacing: 1.2px
+		+r(100)
+			font-size: 20px
 	&__image
-		position: relative
-		left: -10px
-		width: 110%
-		background-color: #FFF 
-		img
-			margin-top: 10px
+		background-color: #FFF
+		text-align: center
+		padding: 10px 0
+		+r(425)
+			background-color: transparent
+			z-index: -1
+.caption
+	&__text
+		color: #555555
+		font-family: Akrobatbold
+		font-size: 22px
+		&_bold
+			color: #53a0cc
+			text-transform: uppercase
+		+r(100)
+			font-size: 16px
+			
 .info
 	text-align: center
 	padding: 20px 30px
 	background-color: #53A0CC
+	margin-top: -100px
+	+r(640)
+		background-color: #fff
+	+r(800)
+		margin-top: 1px
+		width: 100%
+		padding: 10px 10px
 	&__wrapper
 		padding: 20px 0
 		border: 1px solid #f6e43c
 		position: relative
+		+r(800)
+			border: none
+			padding: 0
 		&:after
 			display: block
 			content: ''
@@ -248,6 +302,8 @@
 			+s(fir-tree)
 			bottom: 0
 			left: 20px
+			+r(1000)
+				display: none
 		&:before
 			display: block
 			content: ''
@@ -255,6 +311,8 @@
 			right: 0
 			top: -61px
 			+s(car)
+			+r(1000)
+				display: none
 	&__title
 		color: #ffd357
 		font-family: Akrobat
@@ -262,19 +320,31 @@
 		text-transform: uppercase
 		text-align: center
 		margin-bottom: 18px
+		margin-top: 18px
+		+r(640)
+			background-color: #53A0CC
+			margin-bottom: 0
+			border-radius: 5px 5px 0 0
 	&__table
 		background-color: #FFF 
 		border: 1px solid transparent
 		text-align: center
-		width: 600px
+		max-width: 600px
 		margin: 0 auto
 		color: #1f1f1f
 		font-family: Akrobat
 		line-height: 60px
 		margin-bottom: 40px
+		+r(800)
+			width: 90%
+	&__button-wrap
+		+r(640)
+			background-color: red
+			background-color: #53A0CC
+			padding: 10px 0
+			border-radius: 0 0 5px 5px
 	&__button
-		width: 180px
-		height: 40px
+		padding: 5px 40px
 		border: 3px solid #f6e43c
 		border-radius: 20px
 		background-color: transparent
@@ -283,9 +353,13 @@
 		font-size: 24px
 		line-height: 34px
 		text-transform: uppercase
+		+r(640)
+			font-size: 20px
 .info-table
 	border: none
 	position: relative
+	+r(640)
+		display: none
 	&:after
 		position: absolute
 		display: block
@@ -300,6 +374,8 @@
 		border: 1px solid rgba(98, 98, 98, 0.5)
 		border-bottom: none
 		border-right: none
+		+r(1000)
+			display: none
 	&:before
 		position: absolute
 		margin-top: -1px
@@ -311,11 +387,18 @@
 		background: url('../img/bg-table-2.png') 0 50% no-repeat
 		-webkit-background-size: 100% 100% 
 		-o-background-size: 100% 100% 
-		background-size: 100% 100% 
+		background-size: 100% 100%
+		+r(800)
+			display: none
+	td
+		+r(800)
+			border: 1px solid #000
 	&__head
 		font-size: 30px
 	&__row
 		font-size: 20px
+		+r(800)
+			border: 1px solid red
 	&__row_first
 		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25)
 		border-top: 1px solid rgba(98, 98, 98, 0.5)
@@ -329,6 +412,8 @@
 			background: #626262 url('../img/ruble.png') 50% 50% no-repeat
 			border: 1px solid rgba(232, 232, 232, 1)
 			border-left: none
+			+r(1000)
+				display: none
 		:before
 			position: absolute
 			display: block
@@ -341,6 +426,8 @@
 			background-size: cover
 			top: 0
 			right: 0
+			+r(800)
+				display: none
 	&__row_grow
 		background-color: #626262
 		border: 1px solid rgba(232, 232, 232, 0.5)
@@ -357,10 +444,16 @@
 				background: url('../img/bg-table.png') 50% 0 no-repeat
 				background-size: cover
 				top: -100%
+				+r(800)
+					display: none
 		.hov:hover,	.hov-active
 			background-color: #ffd357
 			cursor: url('../img/cursor.png'), pointer
 			color: #000
+			+r(800)
+				cursor: none
+				background-color: transparent
+				color: #fff
 			&:after
 				display: block
 				content: ''
@@ -369,6 +462,28 @@
 				position: absolute
 				bottom: -20px
 				background-color: #ffd357
-
-
-
+				+r(800)
+					display: none
+					background-color: transparent
+					
+.info__tablle-small
+	display: none
+	width: 100%
+	margin: 0 auto
+	padding: 0 20px
+	background-color: #FFF
+	position: relative	
+	+r(640)
+		display: table
+		border-collapse: separate;
+	tr
+		width: 50%
+		position: relative
+		border-bottom: 1px solid #53A0CC
+	td
+		height: 24px;
+		vertical-align: middle;
+		font-size: 14px
+	.info__tablle-small_price
+		border-bottom: 1px solid #000
+		background-color: #FFF 

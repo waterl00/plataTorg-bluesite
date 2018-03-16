@@ -1,0 +1,432 @@
+.product
+	padding-bottom: 80px
+	&_two
+		padding-top: 161px
+	.containerd
+		position: relative
+		max-width: 960px
+		width: 90%
+		margin: 0 auto
+	&__title
+		text-align: center
+		font-family: Akrobatbold
+		font-size: 36px
+		text-transform: uppercase
+		margin-bottom: 67px
+		&_blue
+			font-family: Akrobat
+			color: #4890bd
+		&_extra
+			font-family: Akrobat
+	&__sale
+		position: absolute
+		color: red
+		top: 4px
+		right: 50px
+		font-family: KobzarKS
+		color: #d24a43
+		+r(960)
+			display: none
+	&__sale-size
+		font-size: 110px
+		letter-spacing: 5.42px
+	&__sale-caption
+		font-size: 17px
+		line-height: 1em
+		letter-spacing: 0.89px
+		transform: rotate(-15deg)
+		position: relative
+		top: -53px
+		right: -100px
+		text-align: center
+		letter-spacing: 0.89px
+
+	&__content
+		vertical-align: top
+		+clr
+		width: 90%
+		margin: 0 auto
+	&__image
+		z-index: 10
+		float: left
+		position: relative
+		width: 337px
+		height: 424px
+		+r(960)
+			position: static
+			float: none
+			margin: 0 auto
+		&:after
+			display: block
+			content: ''
+			display: block
+			position: absolute
+			border: 1px solid #ffffff
+			top: 10px
+			bottom: 10px
+			left: 10px
+			right: 10px
+		img
+			max-width: 100%
+	&__sale2-image
+		width: 82px
+		height: 82px
+		border: 2px solid #7b7b7b
+		background-color: rgba(249, 248, 255, 0.8)
+		font-family: Akrobatbold
+		/* semibold*/
+		color: #d24a43
+		font-size: 20px
+		z-index: 9 
+		text-transform:
+		z-index: 9 
+		text-transform: uppercase
+		letter-spacing: 2.07px
+		position: absolute
+		margin-left: -41px
+		margin-top: -41px
+		left: 0
+		top: 0
+		text-align: center
+		line-height: 82px
+	&__sale-image
+		width: 76px
+		height: 76px
+		position: absolute
+		padding: 17px 7px;
+		display: inline-block;
+		text-align: center;
+		left: 0
+		top: 0
+		transform: translate(-50%,-50%)
+		border: 2px solid #7b7b7b;
+		background-color: rgba(249, 248, 255, 0.8)
+		span
+			display: block;
+			font-size: 16px;
+			color: red;
+		.center
+			font-size: 25px;
+			position: relative;
+			padding: 5px 0;
+			text-transform: uppercase;
+		.center:after,
+		.center:before
+			display: block;
+			position: absolute;
+			content: '';
+			width: 70%;
+			height: 2px;
+			background-color: #d24a43;
+			left: 50%;
+			transform: translate(-50%, 0);
+		.center:after
+			bottom: 0px;
+		.center:before
+			top: 4px;
+	&__quality
+		position: absolute
+		right: 0
+		bottom: 0
+		margin-right: -38px
+		margin-bottom: -38px
+		z-index: 9
+	&__stock
+		display: inline-block
+		box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.25)
+		border: 1px solid rgba(0, 0, 0, 0.75)
+		background-color: #808080
+		text-align: center
+		width: 343px
+		position: relative
+		left: -40px
+		top: -50px
+		z-index: 1
+	&__remainder
+		padding: 13px 13px 0
+		display: inline-block
+		background-color: #ECEDED
+		position: relative
+		top: -272px
+		left: 304px
+		right: 0
+	.caption
+		position: relative
+		left: 380px
+		top: -245px
+		&__text
+			color: #555
+			font-family: Akrobatbold
+			font-size: 24px
+			margin-bottom: 19px
+			&_bold
+				color: #53a0cc
+				text-transform: uppercase
+				margin-bottom: 0
+	.product-stock
+		padding-top: 28px
+		&__title
+			color: #ffffff;
+			font-family: Akrobatbold
+			background-color: #808080 
+			/*SemiBold*/
+			font-size: 48px
+			text-transform: uppercase
+			letter-spacing: 2.92px
+			padding-bottom: 6px
+			position: relative
+			&:after
+				display: block
+				content: ''
+				position: absolute
+				height: 2px
+				width: 114px
+				background-color: #3eb5f1;
+				bottom: 0
+				left: 50%
+				transform: translate(-50%, 0)
+		&__content
+			background-color: #767676
+		&__text
+			color: #e7e0d6;
+			font-family: Akrobat
+			font-size: 18px
+			text-transform: uppercase
+			letter-spacing: 1.09px
+			line-height: 2em
+			&_bg
+				background-color: #808080  
+		&__old-price
+			text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.15);
+			color: #fd7979
+			font-family: Akrobat
+			font-size: 48px
+			font-weight: bold
+			text-transform: uppercase
+			letter-spacing: 2.92px
+			margin-bottom: 23px
+		&__button
+			box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25)
+			border: 1px solid rgba(0, 0, 0, 0.35)
+			background-color: #ffd357
+			border-radius: 40px
+			height: 40px
+			padding: 0 23px
+			color: #2d2d2d
+			font-family: Akrobat
+			font-size: 18px
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 0.9px
+			margin-bottom: 20px
+.remainder
+	text-align: center
+	width: 276px
+	&__content
+		padding: 20px
+		text-align: center
+		background-color: #FFF
+		color: #2d2d2d
+		font-family: Akrobat
+		border: 1px solid #53a0cc
+		margin-bottom: 20px
+	&__text
+		color: #2d2d2d
+		font-size: 16px
+		margin-bottom: 14px
+		span
+			color: #53a0cc
+	&__phone
+		color: #53a0cc
+		font-size: 24px
+		letter-spacing: 1.2px
+	&__image
+		position: relative
+		left: -13px
+		width: 110%
+		background-color: #FFF 
+		img
+			margin-top: 10px
+.info
+	text-align: center
+	padding: 20px 30px
+	background-color: #53A0CC
+	margin-top: -100px
+	&__wrapper
+		padding: 20px 0
+		border: 1px solid #f6e43c
+		position: relative
+		&:after
+			display: block
+			content: ''
+			position: absolute
+			+s(fir-tree)
+			bottom: 0
+			left: 20px
+		&:before
+			display: block
+			content: ''
+			position: absolute
+			right: 0
+			top: -61px
+			+s(car)
+	&__title
+		color: #ffd357
+		font-family: Akrobat
+		font-size: 24px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 18px
+	&__table
+		background-color: #FFF 
+		border: 1px solid transparent
+		text-align: center
+		width: 600px
+		margin: 0 auto
+		color: #1f1f1f
+		font-family: Akrobat
+		line-height: 60px
+		margin-bottom: 40px
+	&__button
+		width: 180px
+		height: 40px
+		border: 3px solid #f6e43c
+		border-radius: 20px
+		background-color: transparent
+		color: #fff
+		font-family: Akrobat
+		font-size: 24px
+		line-height: 34px
+		text-transform: uppercase
+.info-table
+	border: none
+	position: relative
+	&:after
+		position: absolute
+		display: block
+		content: ''
+		width: 60px
+		height: 60px
+		background: #fff url('../img/rulet.png') 50% 50% no-repeat 
+		top: 0
+		height: 64px
+		left: -59px
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25)
+		border: 1px solid rgba(98, 98, 98, 0.5)
+		border-bottom: none
+		border-right: none
+		+r(1000)
+			display: none
+	&:before
+		position: absolute
+		margin-top: -1px
+		top: 50%
+		display: block
+		content: ''
+		width: 600px
+		height: 1px
+		background: url('../img/bg-table-2.png') 0 50% no-repeat
+		-webkit-background-size: 100% 100% 
+		-o-background-size: 100% 100% 
+		background-size: 100% 100%
+		+r(800)
+			display: none
+	td
+		+r(800)
+			border: 1px solid #000
+	&__head
+		font-size: 30px
+	&__row
+		font-size: 20px
+		+r(800)
+			border: 1px solid red
+	&__row_first
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25)
+		border-top: 1px solid rgba(98, 98, 98, 0.5)
+		&:after
+			content: ''
+			background-color: red
+			width: 60px
+			height: 80px
+			position: absolute
+			bottom: 0
+			background: #626262 url('../img/ruble.png') 50% 50% no-repeat
+			border: 1px solid rgba(232, 232, 232, 1)
+			border-left: none
+			+r(1000)
+				display: none
+		:before
+			position: absolute
+			display: block
+			position: absolute
+			display: block
+			content: ''
+			height: 120px
+			width: 1px
+			background: url('../img/bg-table.png') 50% 0 no-repeat
+			background-size: cover
+			top: 0
+			right: 0
+			+r(800)
+				display: none
+	&__row_grow
+		background-color: #626262
+		border: 1px solid rgba(232, 232, 232, 0.5)
+		border-top: none
+		td
+			color: #fff
+			position: relative
+			&:before
+				position: absolute
+				display: block
+				content: ''
+				height: 200%
+				width: 1px
+				background: url('../img/bg-table.png') 50% 0 no-repeat
+				background-size: cover
+				top: -100%
+				+r(800)
+					display: none
+		.hov:hover,	.hov-active
+			background-color: #ffd357
+			cursor: url('../img/cursor.png'), pointer
+			color: #000
+			+r(800)
+				cursor: none
+				background-color: transparent
+				color: #fff
+			&:after
+				display: block
+				content: ''
+				width: 100%
+				height: 20px
+				position: absolute
+				bottom: -20px
+				background-color: #ffd357
+				+r(800)
+					display: none
+	+r(700)
+		table.transp
+			width: 200px
+			margin: 0 auto
+		table.transp
+		    display: block;
+		table.transp tbody tr
+		    width: 100px;
+		table.transp .label
+		    height: 40px;
+		    text-align: center;
+		table.transp tr,
+		table.transp thead
+		    display: block;
+		    float: left;
+		table.transp tr td,
+		table.transp tr th
+		    display: block;
+		table.transp tr:first-child
+		    border-bottom: 0px;
+		    color: white;
+		    text-align: left;
+
+
+

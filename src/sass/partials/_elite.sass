@@ -1,32 +1,56 @@
 .elite
-	padding: 158px 0 82px
+	padding: 80px 0
+	+r(600)
+		padding: 60px 0
+	+r(400)
+		padding: 40px 0
 	max-width: 1900px
+	width: 90%
 	margin: 0 auto
-	+r(1400) 
-		zoom: .7
 	&__heading
 		color: #1f1f1f
 		font-family: Akrobat
 		font-size: 50px
 		text-transform: uppercase
 		text-align: center
-		margin-bottom: 52px
+		margin-bottom: 20px
+		+r(600)
+			font-size: 40px
+			margin-bottom: 25px
+		+r(400)
+			font-size: 20px
+			margin-bottom: 10px
 	&__list
-		padding: 0 20px
-		max-width: 1900px
+		width: 100%
 		margin: 0 auto
 		display: flex
 		-webkit-justify-content: space-between
+		-webkit-justify-content: space-between
 		justify-content: center
+		+r(1100)
+			-webkit-flex-wrap: wrap
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
 	&__image
+		width: 100%
 		position: relative
-		margin-bottom: 60px
-		max-height: 630px
+		margin-bottom: 20px
+		overflow: hidden
+		+r(1200)
+			margin-bottom: 20px
+		+r(1000)
+			margin-bottom: 20px
 		img
-			max-height: 560px
+			max-width: 100%
 	&__item
 		position: relative
-		margin: 0 25px
+		margin: 0 5px
+		width: 32%
+		+r(832)
+			margin-bottom: 20px
+			width: 47%
+		+r(360)
+			width: 40%
 	&__caption
 		padding: 20px 20px 13px 60px
 		position: absolute
@@ -34,9 +58,13 @@
 		top: 40px
 		left: 0
 		right: 0
-		color: #fff
+		color: #eee
+		+r(1200)
+			padding: 0
+			position: static
+			color: #000
 	&__title
-		color: #ffffff
+		color: #eee
 		font-family: Akrobat
 		font-size: 26px
 		text-transform: uppercase
@@ -44,11 +72,27 @@
 		border-bottom: 2px solid #6ac0f3
 		padding-bottom: 17px
 		margin-bottom: 15px
+		+r(1600)
+			font-size: 20px
+			border-bottom: none
+		+r(1200)
+			color: #000
+			padding-bottom: 5px
+			margin-bottom: 5px
+		+r(400)
+			font-size: 18px
+		+r(340)
+			font-size: 16px
 	&__text
-		color: #ffffff
+		color: #eee
 		font-family: Akrobat
 		font-size: 18px
 		letter-spacing: 1.14px
+		+r(1600)
+			font-size: 16px
+		+r(1200)
+			font-size: 12px
+			color: #000
 	&__price
 		text-align: center
 		color: #000000
@@ -58,10 +102,36 @@
 		// Text style for "о, т  ,  р"
 		font-weight: 300
 		// Text style for "652 000"
+		+r(1600)
+			font-size: 20px
+		+r(1200)
+			text-align: left
+			font-size: 12px
+			text-transform: capitalize
 	&__size-price
 		color: #d24a43
 		font-family: Akrobatbold
 		font-size: 36px
 		font-weight: 700
+		+r(1600)
+			font-size: 25px
+		+r(1200)
+			font-size: 18px
+.dlider-elite__dots
+	position: absolute
+	bottom: -40px
+	li
+		display: inline-block
+		font-size: 0
+	li+li
+		margin-left: 10px
+	button
+		font-size: 0
+		display: block
+		width: 15px
+		height: 15px
+		background-color: #fff
+		border: 2px solid #000
+		border-radius: 50%
 
 		

@@ -1,6 +1,8 @@
 .works
 	background-color: #525252
-	padding: 109px 0 40px
+	padding: 80px 0 40px
+	+r(450)
+		padding-top: 40px
 	&__heading
 		color: #e7e0d6
 		font-family: Akrobat
@@ -10,6 +12,9 @@
 		text-align: center
 		&_blue
 			color: #3eb5f1
+		+r(450)
+			font-size: 30px
+			margin-bottom: 20px
 	&__subtitle
 		color: #eeeeee
 		font-family: Akrobat
@@ -17,19 +22,36 @@
 		text-transform: uppercase
 		text-align: center
 		margin-bottom: 35px
+		+r(450)
+			font-size: 16px
+			margin-bottom: 15px
+		+r(360)
+			font-size: 12px
+	&__list
+		margin-bottom: 20px
 	&__item
 		position: relative
 		margin-bottom: 19px
+		width: 45%
+		margin: 10px 10px
+		+r(445)
+			margin: 5px
+		
 	&__image
-		width: 560px
-		height: 357px
+		max-width: 560px
+		max-height: 357px
 		z-index: 1
 		overflow: hidden
+		img
+			width: 100%
 	&__list
 		display: flex
 		flex-wrap: wrap
 		-webkit-justify-content: space-between
 		justify-content: space-between
+		+r(1000)
+			-webkit-justify-content: center
+			justify-content: center
 	&__caption
 		position: absolute
 		bottom: 0
@@ -43,23 +65,35 @@
 		color: #3b3b3b
 		font-family: Akrobat
 		font-size: 22px
+		+r(750)
+			font-size: 16px
+			height: auto
+			line-height: 1
+			padding: 10px 20px
+		+r(450)
+			font-size: 12px
+			padding: 8px 15px
 	&__place
 		font-variant: small-caps
 		display: inline-block
 		float: left
+		+r(800)
+			float: none
+			text-align: center
+			width: 100%
 	&__area
 		text-transform: uppercase
 		font-family: Akrobat
 		display: inline-block
 		float: right
+		+r(800)
+			display: none
 	&__button
-		width: 300px
-		text-align: center
+		padding: 13px 25px
 		text-decoration: none
 		border: 2px solid #6ac0f3
 		color: #ffffff
 		font-family: Akrobatbold
-		padding: 30px 0
 		/* semi*/
 		font-size: 20px
 		text-transform: uppercase
@@ -67,3 +101,5 @@
 		margin: 0 auto
 		display: block
 		border-radius: 22px
+		+r(460)
+			font-size: 16px

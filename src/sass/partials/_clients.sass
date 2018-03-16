@@ -1,5 +1,7 @@
 .clients
-	padding: 80px 70px 160px 0
+	padding: 80px 0
+	+r(530)
+		padding: 20px 0
 	&__heading
 		color: #1f1f1f
 		font-family: Akrobat
@@ -7,43 +9,72 @@
 		text-transform: uppercase
 		margin-bottom: 56px
 		text-align: center
+		+r(530)
+			font-size: 30px
+			margin-bottom: 10px
+	&__list
+		padding: 0 70px
+		+r(1240)
+			padding: 0
 	&__item
-		display: flex
-		margin-bottom: 57px
+		+clr
+		margin-bottom: 70px
+		+r(530)
+			margin-bottom: 20px
 	&__image
-		margin-left: 140px
-		margin-right: 15px
+		float: left
+		margin-left: 144px
+		max-width: 305px
+		width: 100%
 		&_r
-			order: 2
-			margin-left: 10px
-			margin-right: 198px
+			float: right
+			margin-left: auto
+			margin-right: 144px
+		+r(1240)
+			float: none
+			margin: 0 auto 20px
+		+r(530)
+			float: left
+			width: 50%
+			margin: 0 5px
+		img
+			width: 100%
 	&__caption
-		margin-left: 15px
-		margin-right: 130px
+		float: right
+		max-width: 500px
 		&_r
-			order: 1
-			margin-left: 0px
-			margin-right: 10px
-			width: 480px
+			float: left
+		+r(1240)
+			float: none
+			margin: 0 auto
+			text-align: center
 	&__name
 		font-family: Akrobatbold
 		font-size: 27px
 		text-transform: uppercase
 		margin-bottom: 20px
+		+r(530)
+			font-size: 18px
 	&__do
 		color: #3b3b3b
 		font-family: Akrobat
 		font-size: 17px
 		text-transform: uppercase
 		margin-bottom: 23px
+		+r(530)
+			font-size: 16px
 	&__review-title
 		color: #4890bd
 		font-family: Akrobat
 		font-size: 17px
 		text-transform: uppercase
 		margin-bottom: 20px
+		+r(530)
+			display: none
 	&__review-text
 		color: #3b3b3b
 		font-family: Akrobat
 		font-size: 16px
+		+r(530)
+			display: none
 
