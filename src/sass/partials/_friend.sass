@@ -1,5 +1,5 @@
 .friend
-	padding:  84px 0 79px
+	padding:  60px 0 79px
 	+r(600)
 		padding: 20px 0
 	background: url('../img/bg-stock.jpg') 50% 50% no-repeat
@@ -15,15 +15,17 @@
 			width: 90%
 			margin: 0 auto
 		&:before
+			height: 100%
 			display: block
 			content: ''
 			position: absolute
+			background-size:  100%
 			background: url('../img/bg-friend.png') no-repeat
-			left: 0
-			top: 50%
-			margin-top: -290px
+			left: 100px
+			bottom: -100px
 			width: 414px
-			height: 553px
+			height: 550px
+			zoom: 0.9
 			+r(895)
 				display: none
 	&__content

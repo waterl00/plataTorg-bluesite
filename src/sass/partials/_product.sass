@@ -4,9 +4,10 @@
 		margin: 0 auto
 		max-width: 960px
 		position: relative
-		padding-top: 77px
+		padding-top: 40px
+		padding-bottom: 40px
 		+r(1105)
-			max-width: 750px
+
 		+r(768)
 			padding-top: 40px
 	&__wrap
@@ -23,13 +24,13 @@
 			font-family: Akrobat
 		+r(530)
 			font-size: 20px
-			margin-bottom: 20px 
+			margin-bottom: 40px 
 	&__sale
 		color: red
 		font-family: KobzarKS
 		color: #d24a43
 		position: absolute
-		top: 0
+		top: 65px
 		right: 0
 		width: 248px
 		height: 145px
@@ -53,20 +54,19 @@
 	&__list
 		margin-bottom: 150px
 		display: inline-block
+		position: relative
 		+r(1105)
-			margin-bottom: 70px
+			margin-bottom: 200px
 			zoom: 0.7
-			position: relative
 			left: 50%
 			transform: translate(-50%, 0)
 		+r(670)
 			zoom: 0.6
 		+r(570)
-			zoom: 0.4
+			zoom: 0.5
 		+r(500)
-			zoom: 0.35
-		+r(465)
-			zoom: .45
+			zoom: 0.65
+			margin-bottom: 230px
 
 	&__image
 		width: 337px
@@ -84,13 +84,12 @@
 			height: 100%
 	&__quality
 		position: absolute
-		right: -11px
-		bottom: -11px
+		right: -39px
+		bottom: -39px
 		z-index: 9
-		+r(780)
-			display: none
-			bottom: 0
-			right: 0
+		+r(500)
+			right: -20px
+			bottom: -20px
 	&__sale-image
 		width: 76px
 		height: 76px
@@ -102,8 +101,6 @@
 		top: -38px
 		border: 2px solid #7b7b7b;
 		background-color: rgba(249, 248, 255, 0.8)
-		+r(780)
-			display: none
 		span
 			display: block
 			color: #d24a43
@@ -133,7 +130,7 @@
 		margin-top: 60px
 		width: 316px
 		float: left
-		+r(425)
+		+r(500)
 			float: none
 			position: absolute
 			right: 0
@@ -142,7 +139,7 @@
 		position: absolute
 		bottom: 0
 		left: 400px
-		+r(425)
+		+r(500)
 			bottom: -70px
 			left: 0
 			right: 0
@@ -161,12 +158,8 @@
 		letter-spacing: 2.92px
 		padding-bottom: 6px
 		position: relative
-		+r(101)
-			padding: 0
-		+r(100)
-			padding-top: 5px
-			font-size: 24px
-			margin-bottom: 5px 
+		+r(500)
+			padding-bottom: 16px
 		&:after
 			display: block
 			content: ''
@@ -215,7 +208,7 @@
 		border: 1px solid rgba(0, 0, 0, 0.35)
 		background-color: #ffd357
 		border-radius: 40px
-		padding: 0 3px
+		padding: 14px
 		color: #2d2d2d
 		font-family: Akrobat
 		font-size: 12px
@@ -226,17 +219,17 @@
 			
 .remainder
 	background-color: #ECEDED
-	+r(425)
+	+r(500)
 		background-color: transparent
 	&__wrapper
 		padding: 15px 7px
-		+r(425)
+		+r(500)
 			padding: 0
 	&__content
 		border: 1px solid #53a0cc
 		padding:  20px
 		text-align: center
-		+r(425)
+		+r(500)
 			display: none
 			background-color: transparent
 	&__text
@@ -263,7 +256,7 @@
 		background-color: #FFF
 		text-align: center
 		padding: 10px 0
-		+r(425)
+		+r(500)
 			background-color: transparent
 			z-index: -1
 .caption
@@ -285,7 +278,6 @@
 	+r(640)
 		background-color: #fff
 	+r(800)
-		margin-top: 1px
 		width: 100%
 		padding: 10px 10px
 	&__wrapper
@@ -322,9 +314,10 @@
 		margin-bottom: 18px
 		margin-top: 18px
 		+r(640)
+			padding: 10px 0
 			background-color: #53A0CC
 			margin-bottom: 0
-			border-radius: 5px 5px 0 0
+			border-radius: 10px 10px 0 0
 	&__table
 		background-color: #FFF 
 		border: 1px solid transparent
@@ -342,10 +335,10 @@
 			background-color: red
 			background-color: #53A0CC
 			padding: 10px 0
-			border-radius: 0 0 5px 5px
+			border-radius: 0 0 10px 10px
 	&__button
-		padding: 5px 40px
-		border: 3px solid #f6e43c
+		padding: 5px 60px
+		border: 1px solid #f6e43c
 		border-radius: 20px
 		background-color: transparent
 		color: #fff
@@ -470,20 +463,21 @@
 	display: none
 	width: 100%
 	margin: 0 auto
-	padding: 0 20px
 	background-color: #FFF
 	position: relative	
 	+r(640)
 		display: table
 		border-collapse: separate;
 	tr
-		width: 50%
-		position: relative
+		line-height: 20px
 		border-bottom: 1px solid #53A0CC
 	td
 		height: 24px;
 		vertical-align: middle;
 		font-size: 14px
+		border-bottom: 1px solid #53A0CC
+		font-size: 16px
 	.info__tablle-small_price
-		border-bottom: 1px solid #000
-		background-color: #FFF 
+		background-color: #555
+		border-bottom: 1px solid #53A0CC
+		color: #fff

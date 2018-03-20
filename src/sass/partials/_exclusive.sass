@@ -20,16 +20,19 @@
 	
 
 .exclusive
-	padding: 80px 0
+	padding: 40px 0 80px
+	+r(600)
+		padding: 40px 0
 	&__title
 		color: #2d2d2d
 		font-family: Akrobat
-		font-size: 52px
+		font-size: 50px
 		text-transform: uppercase
 		text-align: center
-		margin-bottom: 60px
-		+r(370)
+		margin-bottom: 30px
+		+r(600)
 			font-size: 40px
+			margin-bottom: 20px
 	&__slider
 		position: relative
 	&__slide
@@ -39,6 +42,8 @@
 	&__image
 		position: relative
 		margin-bottom: 40px
+		+r(600)
+			margin-bottom: 10px
 		img
 			width: 100%
 		&:after
@@ -57,6 +62,8 @@
 		font-size: 22px
 		text-transform: uppercase
 		margin-bottom: 5px
+		+r(600)
+			font-size: 16px
 	&__price
 		color: #2d2d2d
 		font-family: Akrobat
@@ -66,3 +73,5 @@
 		span
 			font-size: 26px
 			color: #d24a43
+			+r(600)
+				font-size: 20px

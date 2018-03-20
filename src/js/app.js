@@ -1,5 +1,4 @@
 // example of simple includes for js
-//=include lib/sayHello.js
 //=include lib/jquery.min.js
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
@@ -21,16 +20,19 @@ $('.js-hero').slick({
   ]
 });
 $('.slider-elite').slick({
+    nextArrow: '.slider__next-elite',
+    prevArrow: '.slider__prev-elite',
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dots: true,
-    dotsClass: 'dlider-elite__dots',
+    dotsClass: 'slider-elite__dots',
     responsive: [
         {
           breakpoint: 700,
-          settings: 'unslick'
+          settings: 'unslick',
+          arrows: false,
         },
       ]
 });
@@ -44,8 +46,7 @@ $('.js-hero-exclusive').slick({
       breakpoint: 1024,
       settings: {
         arrows: false,
-        slidesToShow: 1,
-        centerMode: true,
+        slidesToShow: 2,
       }
     },
     {
@@ -53,28 +54,22 @@ $('.js-hero-exclusive').slick({
       settings: {
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: '10px'
+        centerPadding: '100px'
 
       }
     }
   ]
 });
 
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 121) {
-        $('.top-line').addClass('top-line_scrl');
-    } else {
-        $('.top-line').removeClass('top-line_scll');
-    }
-});
+ 
 
 
-/*
 $('.hov').hover(function () {
     console.log('sdsdsdsd');
     $(".hov").removeClass('hov-active');
     $(this).addClass('hov-active');
 })
+/*
 $('.grid').masonry({
   // options
   itemSelector: '.grid-item',
@@ -84,4 +79,19 @@ $('.grid').masonry({
 $('.hamburger').click(function () {
     $(this).toggleClass('is-active');
     $('.main-menu').toggleClass('main-menu_active')
+});
+
+$('.js-btn-popup').click(function () {
+  $('.popup').toggleClass('popup_active');
+});
+
+
+$(document).ready(function(){
+    $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+  var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+      $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1500); // анимируем скроолинг к элементу scroll_el
+        }
+      return false; // выключаем стандартное действие
+    });
 });

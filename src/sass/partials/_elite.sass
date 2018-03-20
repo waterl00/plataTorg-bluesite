@@ -1,19 +1,19 @@
 .elite
-	padding: 80px 0
-	+r(600)
-		padding: 60px 0
-	+r(400)
-		padding: 40px 0
+	padding: 70px 0 80px
 	max-width: 1900px
 	width: 90%
 	margin: 0 auto
+	+r(600)
+		padding: 60px 0
+	+r(500)
+		padding: 40px 0 0px
 	&__heading
 		color: #1f1f1f
 		font-family: Akrobat
-		font-size: 50px
+		font-size: 60px
 		text-transform: uppercase
 		text-align: center
-		margin-bottom: 20px
+		margin-bottom: 30px
 		+r(600)
 			font-size: 40px
 			margin-bottom: 25px
@@ -44,12 +44,12 @@
 			max-width: 100%
 	&__item
 		position: relative
-		margin: 0 5px
+		margin: 0 25px
 		width: 32%
 		+r(832)
-			margin-bottom: 20px
-			width: 47%
-		+r(360)
+			width: 46%
+			margin: 0 10px 30px
+		+r(560)
 			width: 40%
 	&__caption
 		padding: 20px 20px 13px 60px
@@ -117,7 +117,7 @@
 			font-size: 25px
 		+r(1200)
 			font-size: 18px
-.dlider-elite__dots
+.slider-elite__dots
 	position: absolute
 	bottom: -40px
 	li
@@ -133,5 +133,30 @@
 		background-color: #fff
 		border: 2px solid #000
 		border-radius: 50%
-
+		.active, &:hover
+			background-color: #000
+	.slick-active button
+		background-color: #000
+.slider-eliete-wrap
+	+r(700)
+		display: none
+.slider__next-elite,
+.slider__prev-elite
+	display: block
+	width: 26px
+	height: 49px
+	position: absolute
+	top: 50%
+	margin-top: -25px
+	+r(700)
+		display: none
+.slider__next-elite
+	right: -20px
+	+s(arrow-exclusive)
+	transform: rotate(180deg)
+.slider__prev-elite
+	left: -20px
+	+s(arrow-exclusive)
+.slider-elite-wrap
+	position: relative
 		
