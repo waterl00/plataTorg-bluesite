@@ -1,8 +1,8 @@
 .goods
-	.container + .container
-		margin-top: 60px
-	padding: 40px 0 100px 
-	zoom: 0.9
+	padding: 40px 0
+	.container
+		max-width: 948px
+		margin: 0 auto
 	+r(1400)
 		zoom: .55
 	&__title
@@ -38,11 +38,18 @@
 	&__images-wrapper
 		+clr
 		font-size: 0
+		display: flex
+	&__image-wrap
+		width: 50%
+		margin-right: 25px
+		&:last-child
+			margin-right: 0
 	&__image
 		position: relative
-		width: 47%
 		overflow: hidden
-		margin-bottom: 20px
+		width: 100%
+		&:hover img
+			transform: scale(1.1)
 		+r(700)
 			display: block
 			margin: 0 auto 20px
@@ -53,36 +60,22 @@
 			display: block
 			content: ''
 			position: absolute
-			top: 7px
-			bottom: 7px
-			right: 37px
-			left: 7px
+			top: 10px
+			bottom: 10px
+			right: 10px
+			left: 10px
 			border: 1px solid #fff
 		img
-			transition: all 1s ease-out
-			max-width: 100%
+			width: 100%
 		&_big
-			margin-left: 25px
-			float: left
-			+r(700)
-				float: none
 		&_small
-			float: right
-			margin-right: 25px
-			margin-bottom: 35px
-			+r(530)
-				display: none
+			margin-bottom: 25px
 	&__description
 		+clr
-		+r(700)
-			text-align: center
+		position: relative
 	&__table
 		float: left
-		width: 539px
-		margin-left: 25px
-		+r(700)
-			float: none
-			margin: 0 auto 40px
+		width: 48.5%
 		&-head
 			font-family: Akrobatbold
 			background-color: #dcdcdc
@@ -102,23 +95,19 @@
 				color: #d51a1a
 	&__button
 		float: right
-		margin: 23px 25px 0 0
-		width: 253px
+		padding: 14px 22px
 		border: 2px solid #4890bd
 		text-align: center
-		border-radius: 28px
+		border-radius: 20px
 		background-color: transparent
 		color: #3b3b3b
 		font-family: Akrobat
 		/*semi bold*/
-		padding: 22px 0
 		font-size: 28px
 		text-transform: uppercase
-		+r(700)
-			float: none
-			margin: 0
-			display: inline-block
-			margin-bottom: 40px
+		position: absolute
+		bottom: 0
+		right: 0
 
 				
 			

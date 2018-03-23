@@ -1,35 +1,53 @@
 .comands
-	padding: 0px 0 80px
-	margin-top: -80px
+	padding: 80px 0
+	+r(500)
+		padding: 40px 0
+	.container
+		max-width: 1000px
 	+r(700)
 		margin-top: 0
-	+r(530)
-		display: none
 	&__title
 		text-align: center
 		color: #1f1f1f
 		font-family: Akrobat
-		font-size: 45px
+		font-size: 50px
 		font-weight: 400
 		text-transform: uppercase
-		margin-bottom: 52px
+		margin-bottom: 30px
+		+r(530)
+			font-size: 30px
+			margin-bottom: 10px
 	&__list
 		display: flex
 		justify-content: center
-		flex-wrap: wrap
 	&__item
+		width: 25%
 		text-align: center
-		margin: 0 7px 20px
-		padding: 17px 0 47px
 		background-color: #e8e8e8
 		text-align: center
+		padding-bottom: 48px
+		border-radius: 4px
+		translate: all 1s liner
+		&:hover img
+			transform: scaleX(-1)
+			translate: all 4s liner
+		+r(768)
+			padding-bottom: 30px
+	&__item + &__item
+		margin-left: 15px
 	&__image
-		margin: 0 47px 35px 47px
-		border-radius: 19px
-		width: 141px
-		height: 141px
+		margin: 17px auto 35px
+		max-width: 141px
+		width: 90%
 		overflow: hidden
 		background-color: transparent
+		border-radius: 19px
+		overflow: hidden
+		+r(768)
+			margin-bottom: 17px
+		img
+			width: 100%
+			border-radius: 19px
 	&__caption
 		padding: 17px 0
 		background-color: #747474
@@ -38,6 +56,8 @@
 		font-family: Akrobat
 		font-size: 20px
 		text-transform: uppercase
+		+r(768)
+			font-size: 16px
 		&:after
 			display: block
 			content: ''
@@ -45,9 +65,11 @@
 			height: 2px
 			background-color: #3eb5f1
 			margin: 15px auto 19px
+			+r(768)
+				display: none
 	&__position
 		color: #ffffff
 		font-family: Akrobat
-		font-size: 16px
+		font-size: 13px
 		font-weight: 700
 		

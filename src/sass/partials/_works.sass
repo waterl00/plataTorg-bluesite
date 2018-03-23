@@ -1,14 +1,16 @@
 .works
 	background-color: #525252
-	padding: 80px 0 40px
+	padding: 80px 0
 	+r(450)
-		padding-top: 40px
+		padding: 40px 0
+	.container
+		max-width: 960px
 	&__heading
 		color: #e7e0d6
 		font-family: Akrobat
-		font-size: 44px
+		font-size: 50px
 		text-transform: uppercase
-		margin-bottom: 30px
+		margin-bottom: 10px
 		text-align: center
 		&_blue
 			color: #3eb5f1
@@ -21,7 +23,7 @@
 		font-size: 25px
 		text-transform: uppercase
 		text-align: center
-		margin-bottom: 35px
+		margin-bottom: 15px
 		+r(450)
 			font-size: 16px
 			margin-bottom: 15px
@@ -32,16 +34,15 @@
 	&__item
 		position: relative
 		margin-bottom: 19px
-		width: 45%
-		margin: 10px 10px
-		+r(445)
-			margin: 5px
+		width: 49%
+		+r(500)
+			margin-bottom: 10px
 		
 	&__image
-		max-width: 560px
-		max-height: 357px
 		z-index: 1
 		overflow: hidden
+		&:hover img
+			transform: scale(1.1)
 		img
 			width: 100%
 	&__list
@@ -49,9 +50,6 @@
 		flex-wrap: wrap
 		-webkit-justify-content: space-between
 		justify-content: space-between
-		+r(1000)
-			-webkit-justify-content: center
-			justify-content: center
 	&__caption
 		position: absolute
 		bottom: 0

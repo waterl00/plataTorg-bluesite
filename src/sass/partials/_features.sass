@@ -1,49 +1,48 @@
 .features
 	padding: 40px 0
-	&_delivery
-		padding: 60px 0
+	color: #000
 	+r(820)
-		padding: 65px 0
+		padding: 30px 0
 	+r(700)
-		padding: 55px 0
-	+r(400)
-		padding: 40px 0
-	+r(375)
-		display: none
+		padding: 20px 0
+	+r(500)
+		padding: 10px 0
 	&__list
 		max-width: 981px
 		margin: 0 auto
 		display: flex
-		-webkit-justify-content: space-between
-		justify-content: space-between
+		justify-content: center
 		align-items: baseline
 		align-content: center
 	&__item
 		text-align: center
+		& + .features__item
+			margin-left: 80px
+			+r(700)
+				margin-left: 60px
+			+r(580)
+				margin-left: 40px
 		p
 			color: #000000
 			font-family: Akrobat
-			font-size: 24px
+			font-size: 20px
 			font-weight: 300
 			text-transform: uppercase
 			text-align: center
-			padding: 0 5px 
-			+r(820)
-				font-size: 20px
+			+r(900)
+				font-size: 18px
 			+r(700)
-				font-size: 16px
-			+r(400)
 				font-size: 12px
+			+r(500)
 		.icon
-			font-size: 50px
+			font-size: 40px
 			margin-bottom: 15px
 			+r(820)
-				font-size: 50px
+				font-size: 36px
+				margin-bottom: 10px
 			+r(700)
-				font-size: 30px
-			+r(400)
-				font-size: 20px
-		span
-			display: inline-block
-		.icon
-			fill: #ddd
+				font-size: 32px
+				margin-bottom: 5px
+			+r(500)
+				font-size: 26px
+				margin-bottom: 2px

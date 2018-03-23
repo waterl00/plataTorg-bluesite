@@ -1,10 +1,14 @@
 .agronomist
 	background-color: #525252
-	padding: 48px 0
-	.container
-		padding: 0 80px
-	+r(1400)
-		zoom: .95
+	padding: 40px 0
+	+r(820)
+		padding: 30px 0
+	+r(700)
+		padding: 20px 0
+	+r(500)
+		padding: 10px 0
+	&_design
+		padding-bottom: 20px
 	&__heading
 		text-align: center
 		font-family: Akrobat
@@ -12,68 +16,53 @@
 		font-weight: 400
 		text-transform: uppercase
 		color: #e7e0d6
-		margin-bottom: 30px
+		margin-bottom: 20px
+		+r(820)
+			font-size: 40px 
+			margin-bottom: 15px
+		+r(700)
+			font-size: 35px
+			margin-bottom: 10px
+		+r(500)		
+			font-size: 30px
+			margin-bottom: 5px
 		span
 			color: #3eb5f1
-		+r(930)
-			font-size: 55px
-		+r(540)
-			font-size: 50px
-		+r(400)
-			font-size: 30px
-	&__content
-		position: relative
-		+clr
-		+r(930)
-	&__wrapper
-		max-width: 440px
-		float: left
-		margin-right: 40px
 		&_design
-			float: right
-		+r(930)
-			margin: 0 auto
-			width: 70%
-		+r(540)
-			float: none
-			width: 100%
-		
+			margin-bottom: 0
+	&__content
+		max-width: 700px
+		display: flex
+		margin: 0 auto
+		flex-direction: row-reverse
+		align-items: center
+		&_design
+			flex-direction: row
+			position: relative
 	&__image-wrapper
-		max-width: 520px
 		position: relative
-		float: right
-		img
-			width: 100%
-		+r(1100)
-			width: 450px
-		+r(1000)
-			width: 400px
-		+r(930)
-			width: 25%
-			float: left
-			margin-right: 20px
-		+r(540)
-			width: 50%
-			margin: 0 auto 20px
-			float: none
+		width: 40%
 		&:after
-			position: absolute
 			display: block
 			content: ''
 			border: 1px solid #fff
-			top: 10px
-			bottom: 10px
-			left: 10px
-			right: 10px
-		&_design
+			top: 5px
+			bottom: 5px
+			left: 5px
+			right: 5px
 			position: absolute
-			left: 0
-			bottom: -95px
+		&_design
+			position: relative
+			transform: scale(1.1)
+			bottom: -40px
+			left: -20px
 			&:after
-				border: none
-			+r(930)
-				position: static
-			
+				display: none
+		img
+			width: 100%
+	&__wrapper
+		width: 60%
+		margin-right: 20px
 	&__title
 		color: #e7e0d6
 		font-family: Akrobat
@@ -81,8 +70,6 @@
 		font-weight: 700
 		text-transform: uppercase
 		margin-bottom: 17px
-		+r(540)
-			display: none
 	&__sub-title
 		color: #3eb5f1
 		font-family: Akrobat
@@ -90,8 +77,15 @@
 		font-weight: 700
 		text-transform: uppercase
 		margin-bottom: 19px
-		+r(540)
-			display: none
+		+r(820)
+			font-size: 22px 
+			margin-bottom: 15px
+		+r(700)
+			font-size: 20px
+			margin-bottom: 10px
+		+r(500)		
+			font-size: 18px
+			margin-bottom: 5px
 	&__text
 		color: #fefefe
 		font-family: Akrobat
@@ -99,22 +93,35 @@
 		font-weight: 400
 		text-transform: uppercase
 		margin-bottom: 25px
-		+r(540)
-			display: none
+		+r(820)
+			margin-bottom: 15px
+		+r(700)
+			margin-bottom: 10px
+		+r(500)		
+			font-size: 14px
+			margin-bottom: 5px
 		&::last-child
 			margin-bottom: 11px
 	&__button
-		padding: 15px 25px
+		padding: 15px 15px
 		background-color: transparent 
 		text-decoration: none
 		border: 2px solid #6ac0f3
-		border-radius: 24px
+		border-radius: 20px
 		color: #ffffff
 		font-family: Akrobatbold
 		/*semi bold*/
 		font-size: 16px
 		text-transform: uppercase
-		&_design
-		+r(540)
-			display: block
-			margin: 0 auto
+		+r(500)
+			font-size: 14px
+.painting
+	position: absolute
+	bottom: 10px
+	right: 0
+	transform: rotate(-20deg)
+	svg
+		fill: #fff
+		font-size: 70px
+	+r(700)
+		display: none

@@ -69,12 +69,6 @@ $('.hov').hover(function () {
     $(".hov").removeClass('hov-active');
     $(this).addClass('hov-active');
 })
-/*
-$('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: 285
-});*/
 
 $('.hamburger').click(function () {
     $(this).toggleClass('is-active');
@@ -95,3 +89,29 @@ $(document).ready(function(){
       return false; // выключаем стандартное действие
     });
 });
+
+
+ $(document).ready(function() {
+  $('img.animated').hover(
+   function() {
+    $(this).addClass('bounce'); // Добавляем класс bounce
+   },
+   function() {
+    $(this).removeClass('bounce'); // Убираем класс
+   }
+  )})
+
+
+var s = new YMaps.Style();
+
+// Создает стиль значка метки
+s.iconStyle = new YMaps.IconStyle();
+s.iconStyle.href = "/i/maps/icons/photo.png";
+s.iconStyle.size = new YMaps.Point(18, 29);
+s.iconStyle.offset = new YMaps.Point(-9, -29);
+s.iconStyle.href = "/i/maps/icons/photo.png";
+s.iconStyle.size = new YMaps.Point(18, 29);
+s.iconStyle.offset = new YMaps.Point(-9, -29);
+var placemark = new YMaps.Placemark(point, {style: s});
+map.addOverlay(placemark);
+console.info(placemark);

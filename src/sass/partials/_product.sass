@@ -1,4 +1,11 @@
 .product
+	padding: 60px 0
+	+r(820)
+		padding: 45px 0
+	+r(700)
+		padding: 35px 0
+	+r(500)
+		padding: 20px 0
 	&__wrapper
 		max-width: 960px
 		margin: 0 auto
@@ -7,7 +14,6 @@
 		padding-top: 40px
 		padding-bottom: 40px
 		+r(1105)
-
 		+r(768)
 			padding-top: 40px
 	&__wrap
@@ -30,7 +36,7 @@
 		font-family: KobzarKS
 		color: #d24a43
 		position: absolute
-		top: 65px
+		top: 15px
 		right: 0
 		width: 248px
 		height: 145px
@@ -72,6 +78,15 @@
 		width: 337px
 		float: left
 		position: relative
+		&:after
+			display: block
+			content: ''
+			position: absolute
+			left: 10px
+			top: 10px
+			bottom: 10px
+			right: 10px
+			border: 1px solid #fff
 		+r(100)
 			margin: 0 auto 20px
 			margin: 0
@@ -110,13 +125,14 @@
 			text-transform: uppercase
 			letter-spacing: 2.07px
 	&__stock
-		padding: 0 0 0 34px
+		padding: 0
 		width: 330px
 		float: left
 		margin-left: -34px
 		margin-top: -36px
 		background-color: #7F7F7F
 		text-align: center
+		z-index: -2
 		+r(101)
 			float: right
 			margin: 0 0 20px 0
@@ -148,7 +164,6 @@
 .product-stock
 	padding-top: 28px
 	&__title
-		padding-right: 34px
 		color: #ffffff;
 		font-family: Akrobatbold
 		background-color: #808080 
@@ -157,26 +172,17 @@
 		text-transform: uppercase
 		letter-spacing: 2.92px
 		padding-bottom: 6px
-		position: relative
 		+r(500)
 			padding-bottom: 16px
 		&:after
 			display: block
 			content: ''
-			position: absolute
 			height: 2px
 			width: 114px
-			background-color: #3eb5f1;
-			bottom: 0
-			left: 50%
-			transform: translate(-50%, 0)
+			background-color: #3eb5f1
+			margin: 2px auto 3px
 	&__content
 		background-color: #767676
-		padding-right: 34px
-		+r(101)
-			padding: 0
-		+r(100)
-			font-size: 18px
 	&__text
 		color: #e7e0d6;
 		font-family: Akrobat
@@ -184,13 +190,10 @@
 		text-transform: uppercase
 		letter-spacing: 1.09px
 		line-height: 2em
-		+r(101)
-			font-size: 12px
 		&_bg
-			background-color: #808080 
-			margin-right: -34px
-			+r(100)
-				margin: 0
+			font-weight: 700 
+			background-color: #808080
+			line-height: 40px
 	&__old-price
 		text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.15);
 		color: #fd7979
@@ -199,15 +202,12 @@
 		font-weight: bold
 		text-transform: uppercase
 		letter-spacing: 2.92px
-		margin-bottom: 23px
-		+r(101)
-			font-size: 24px
-			margin-bottom: 15px
+		margin-bottom: 10px
 	&__button
 		box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25)
 		border: 1px solid rgba(0, 0, 0, 0.35)
 		background-color: #ffd357
-		border-radius: 40px
+		border-radius: 10px
 		padding: 14px
 		color: #2d2d2d
 		font-family: Akrobat
@@ -215,16 +215,30 @@
 		font-weight: 400
 		text-transform: uppercase
 		letter-spacing: 0.9px
-		margin-bottom: 20px
+		margin-bottom: 18px
 			
 .remainder
 	background-color: #ECEDED
 	+r(500)
 		background-color: transparent
 	&__wrapper
+		position: relative
 		padding: 15px 7px
 		+r(500)
 			padding: 0
+	&__top
+		text-align: center
+		background-color: #fff
+		position: absolute
+		top: -17px
+		left: 0
+		right: 0
+		font-family: Akrobatbold;
+		font-size: 18px;
+		text-transform: uppercase;
+		/* Text style for "157" */
+		span
+			color: #d24a43;
 	&__content
 		border: 1px solid #53a0cc
 		padding:  20px

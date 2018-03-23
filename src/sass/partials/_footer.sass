@@ -1,16 +1,14 @@
 .footer
-	background-color: #708090
-	padding: 85px 0
-	+r(510)
-		padding: 10px
+	padding-top: 40px
+	background-color: #525252
+	.container
+		position: relative
 	&__wrap
-		max-width: 1200px
-		width: 90%
-		margin: 0 auto
 		display: flex
 		-webkit-flex-wrap: wrap
 		-ms-flex-wrap: wrap
 		flex-wrap: wrap
+		-webkit-justify-content: space-between
 		justify-content: space-between
 		color: #dcdcdc
 		font-family: Akrobat
@@ -27,8 +25,15 @@
 			width: 106px
 			height: 2px
 			background-color: #6ac0f3
-			margin-top: 24px
-			margin-bottom: 27px
+			margin-top: 5px
+			margin-bottom: 5px
+	.logo
+		-webkit-align-self: flex-start
+		align-self: flex-start
+		margin-right: 20px
+		border-color: #6ac0f3
+		+r(820)
+			display: none
 	&__item
 		margin: 0 20px 20px 0
 		+r(720)
@@ -39,54 +44,103 @@
 			display: none
 	&__list
 		li
-			margin-bottom: 16px
 		a
 			color: #dcdcdc
 			font-family: Akrobat
 			font-size: 16px
 			text-decoration: none
 	&__contacts
-		text-align: center
-		border: 2px solid #6ac0f3
-		padding: 25px 25px 38px		
-		font-size: 16px
+		+clr
+		text-align: justify
+		font-size: 30px
+		margin-bottom: 10px
+		+r(820)
+			display: none
 		+r(510)
 			width: 100%
 			position: relative
 			padding: 25px 25px 38px		
 	&__phone
+		display: inline
 		color: #dcdcdc
 		font-family: Akrobatbold
-		margin-bottom: 35px
+		margin-bottom: 5px
+		float: left
 		+r(510)
 			display: inline-block
 			margin-right: 20px
 	&__hour-work
-		margin-bottom: 35px
+		margin-bottom: 5px
 		position: absolute
 		text-align: center
 		left: 0
 		right: 0
 		top: 55px
-			
 	&__email
-		margin-bottom: 30px
+		display: inline-block
+		margin-bottom: 5px
+		font-family: Akrobatbold
+		float: right
 		+r(510)
 			display: inline-block
+	&__bottom-wrap
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+	&__bottom-title
+		font-family: Akrobatbold
+		font-size: 20px
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 10px
+	&__bottom-vygoda
+		width: 50%
+		text-align: center
+		color: #dcdcdc
+		font-size: 18px
+		text-transform: uppercase
+		font-family: Akrobat
+		text-align: center
+	&__bottom-hotite
+		width: 50%
+		color: #dcdcdc
+		font-family: Akrobat
+		font-size: 18px
+		text-transform: uppercase
+		margin-bottom: 5px
+		text-align: center
+		text-transform: uppercase
+		button
+			margin-top: 15px
+			font-size: 16px
+			padding: 10px 35px
+			border-radius: 15px
+			background-color: transparent 
+			text-transform: uppercase
+			border: 1px solid #6ac0f3
+			color: #dcdcdc
 .copyright
-	background-color: #6f7479
-	color: white
+	background-color: #525252
+	color: #dcdcdc
 	font-size: 14px
-	padding: 60px 0
+	padding: 10px 0
 	+clr
+	+r(540)
+		font-size: 12px
+	+r(470)
+		font-size: 10px
 	&__inn
 		float: left
 		width: 50%
 		padding-top: 15px
+		+r(710)
+			width: auto
+			margin-right: 10px
 	&__firma
 		padding-top: 15px
 		float: left
 		margin-bottom: 10px
+		margin-right: 10px
 	&__text
 		clear: both
 		font-size: 14px
@@ -95,7 +149,7 @@
 	&__counter
 		float: right
 .counter
-	border: 3px solid #fff
+	border: 3px solid #dcdcdc
 	display: inline-block
 	padding: 3px 3px 3px 50px
 	position: relative
@@ -105,7 +159,7 @@
 		top: 3px
 		font-size: 30px
 	span
-		color: #FFF
+		color: #dcdcdc
 		display: block
 		font-size: 10px
 		font-family: sans-serif

@@ -1,15 +1,23 @@
 {% import "partials/_mixins.html" as mixins %}
 <!doctype html>
-<html>
+<html lang="ru">
   <head>
-    <meta charset="utf-8" />
     <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+    <meta name="description" content="У нас вы можете купить тую смарагд, тую брабант, тую колумну, можжевельники с посадкой. В нашем ассортименте вы найдете крупномеры, плодовые и лиственные деревья, а так же кустарники. Качественно и недорого.">
+    <meta name="keywords" content="купить тую, тую смарагд, туя смарагд, туя брабант, тую брабант, тую колумну, туя колумна, купить можжевельник, купить можжевельники с посадкой, купить тую с посадкой">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="width=500, initial-scale=1" />
     <meta name="theme-color" content="#fff" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.css" />
+    <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!--link href="/img/ico.png" type="image/png" rel="apple-touch-icon"-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">-->
     <link rel="stylesheet" media="all" href="css/app.css" />
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
@@ -22,7 +30,7 @@
     <!-- END content -->
 
     <!-- BEGIN scripts -->
-
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
