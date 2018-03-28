@@ -1,87 +1,90 @@
-.friend
-	padding:  60px 0 79px
-	zoom: 0.6
-	+r(600)
-		padding: 20px 0
-	background: url('../img/bg-stock.jpg') 50% 50% no-repeat
-	-webkit-background-size: cover
-	 -o-background-size: cover
-	 background-size: cover 
-	width: 100%
-	.container
-		position: relative
-		+clr
-		+r(895)
-			position: static
-			width: 90%
-			margin: 0 auto
-		&:before
-			height: 100%
-			display: block
-			content: ''
-			position: absolute
-			background-size:  100%
-			background: url('../img/bg-friend.png') no-repeat
-			left: 150px
-			bottom: -100px
-			width: 414px
-			height: 550px
-			zoom: 0.9
-			+r(895)
-				display: none
-	&__content
-		text-align: center
-		float: right
-		margin-right: 150px
-		font-family: Akrobatbold
-		+r(895)
-			float: none
-			width: 100%
-	&__title
-		color: #3b3b3b
-		font-size: 42px
-		color: #ffd357
-		margin-bottom: 10px
-		+r(600)
-			font-size: 25px
-	&__subTitle
-		font-size: 30px
-		margin-bottom: 10px
-		+r(600)
-			font-size: 25px
-	&__free
-		color: #ffffff
-		font-size: 82px
-		text-transform: uppercase
-		position: relative
-		margin-bottom: 50px
-		+r(600)
-			font-size: 30px
-			margin-bottom: 20px
-		&:after
-			+s(arrow)
-			display: block
-			position: absolute
-			left: -192px
-			top: 50%
-			transform: translate(0, -50%)
-			content: ''
-			margin-top: 5px
-			+r(1000)
-				display: none
-	&__button
-		max-width: 280px
-		padding: 14px 40px
-		background-color: #ffd357
-		border-radius: 20px
-		color: #3b3b3b
-		font-family: Akrobatbold
+.friend 
+	ms-zoom: 0.6
+	zoom: .6
+	padding:  30px 0
+	padding: 20px 0; 
+	background: url('../img/bg-stock.jpg') 50% 50% no-repeat;
+	-webkit-background-size: cover 
+	-o-background-size: cover;
+	background-size: cover; 
+	width: 100%;
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+		zoom: 1
+	+r(768)
+	.container 
+		position: relative;
+		@include clr;
+		@include r(895) 
+			position: static;
+			width: 90%;
+			margin: 0 auto; 
+		&:before 
+			height: 100%;
+			display: block;
+			content: '';
+			position: absolute;
+			background-size:  100%;
+			background: url('../img/bg-friend.png') no-repeat;
+			left: 150px;
+			bottom: -100px;
+			width: 414px;
+			height: 550px;
+			transform: scale(0.9);
+			@include r(895) 
+				display: none;   
+	&__content 
+		text-align: center;
+		float: right;
+		margin-right: 150px;
+		font-family: Akrobatbold;
+		@include r(895) 
+			float: none;
+			width: 100%;  
+	&__title 
+		color: #3b3b3b;
+		font-size: 42px;
+		color: #ffd357;
+		margin-bottom: 10px;
+		@include r(600) 
+			font-size: 25px;  
+	&__subTitle 
+		font-size: 30px;
+		margin-bottom: 10px;
+		@include r(600) 
+			font-size: 25px;  
+	&__free 
+		color: #ffffff;
+		font-size: 82px;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 50px;
+		@include r(600) 
+			font-size: 30px;
+			margin-bottom: 20px; 
+		&:after 
+			@include s(arrow);
+			display: block;
+			position: absolute;
+			left: -192px;
+			top: 50%;
+			transform: translate(0, -50%);
+			content: '';
+			margin-top: 5px;
+			@include r(1000) 
+				display: none;   
+	&__button 
+		max-width: 280px;
+		padding: 14px 40px;
+		background-color: #ffd357;
+		border-radius: 20px;
+		color: #3b3b3b;
+		font-family: Akrobatbold;
 		/*siemiBold*/
-		font-size: 28px
-		text-transform: uppercase
-		text-align: center
-		text-decoration: none
-		+r(600)
-			font-size: 16px
-			padding: 5px 20px
-			
+		font-size: 28px;
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		@include r(600) 
+			font-size: 16px;
+			padding: 5px 20px;   
+

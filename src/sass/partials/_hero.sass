@@ -275,8 +275,22 @@
 			margin-top: 150px
 			text-align: center
 			margin: 200px auto 0
+		+r(768)
+			margin: 0
+			height: 100%
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			margin: 0
+			align-items: flex-start
+			justify-content: center
+			padding-left: 80px
 		+r(500)
-			margin-top: 150px
+			-webkit-align-items: center 
+			align-items: center
+			padding-left: 0
+			margin: 0 auto
 	&__title
 		font-family: Akrobatbold
 		display: inline-block
@@ -288,6 +302,8 @@
 		+r(780)
 			font-size: 40px
 			padding-right: 0
+		+r(500)
+			font-size: 30px
 		&:after
 			display: block
 			content: ""
@@ -310,6 +326,9 @@
 		+r(780)
 			font-size: 24px
 			margin-bottom: 30px
+		+r(500)
+			font-size: 25px
+			font-weight: 700 
 		&_fruit-trees
 			color: #3b3b3b
 	&__button
@@ -322,6 +341,10 @@
 		text-transform: uppercase
 		+r(780)
 			font-size: 16px
+		+r(500)
+			font-size: 16px
+			padding: 10px 20px
+			border-radius: 15px
 		&_large-scale
 			background-color: #4890bd
 			color: #fff 

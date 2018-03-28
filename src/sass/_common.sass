@@ -5,9 +5,7 @@
 /*+fontw('Phanton', 'Phanton-Light', '300')*/
 /*+fontw('Phanton', 'Phanton', '400')*/
 /*+fontw('Phanton', 'Phanton-Bold', '700')*/
-body, html
-	margin: 0px
-	padding: 0
+
 +font('Akrobat', 'Akrobat')
 +font('Akrobatbold', 'Akrobatbold')
 +font('Akrobatlight', 'Akrobatlight')
@@ -16,6 +14,14 @@ body, html
 +font('PantonLight', 'PantonLight')
 /*+font('KabzarKS', 'KabzarKS')*/
 +font('LucidaSans', 'LucidaSansUnicode')
+body, html
+	width: 100%
+	margin: 0px
+	padding: 0
+body	
+    -ms-text-size-adjust: none
+    -moz-text-size-adjust: none
+    -webkit-text-size-adjust: none
 
 @font-face
     font-family: 'KobzarKS'
@@ -28,7 +34,7 @@ body, html
 	width: 90%
 	margin: 0 auto
 	+r(425)
-		width: 100vw
+		width: 95%
 .top-button
 	display: block
 	position: fixed
@@ -38,14 +44,11 @@ body, html
 	background-color: #000
 	color: #fff
 	opacity: 0.6
-	display: none
 	z-index: 10
 	padding: 28px 5px 5px 5px
 	vertical-align: bottom
 	font-size: 16px
 	text-transform: lowercase
-	+r(820)
-		display: block
 	&:after
 		display: block
 		content: ''

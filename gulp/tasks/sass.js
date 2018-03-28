@@ -9,14 +9,13 @@ var csso = require('postcss-csso');
 
 var processors = [
     autoprefixer({
-        browsers: ['last 4 versions'],
+        browsers: ['last 7 versions'],
         cascade: false
     }),
     require('lost'),
     mqpacker({
         sort: sortMediaQueries
     }),
-    csso
 ];
 
 gulp.task('sass', function() {

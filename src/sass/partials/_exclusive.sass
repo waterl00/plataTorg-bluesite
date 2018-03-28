@@ -1,28 +1,48 @@
 .slider__next-exclusive,
 .slider__prev-exclusive
 	+s(arrow-exclusive)
+	width: 26px
+	height: 49px
 	position: absolute
 	top: 50%
 	margin-top: -43px
-.slider__prev-exclusive
-	left: -60px
-	+r(1200)
-		left: 50%
-		top: 50%
+	z-index: 20
+	+r(500)
+		width: 0
 		height: 0
-.slider__next-exclusive
-	right: -60px
-	transform: rotate(180deg)
-	+r(1200)
+		left: auto
 		right: 50%
-		top: 50%
-		height: 0
-	
-
+		display: none
+.slider__prev-exclusive
+	left: -20px
+	+r(600)
+		left: -25px
+.slider__next-exclusive
+	right: -20px
+	transform: rotate(180deg)
+	+r(600)
+		right: -25px
+.exclusive__slides .slick-dots
+	margin: 10px auto 0
+	text-align: center
+	li 
+		display: inline-block
+		margin-right: 10px
+	button
+		font-size: 0
+		width: 15px
+		height: 15px
+		border-radius: 50%
+		background-color: #fff
+		border: 2px solid #000
+		& .active, &:hover 
+			background-color: #000  
 .exclusive
 	padding: 40px 0 80px
-	+r(600)
-		padding: 40px 0
+	+r(790)
+		padding: 30px 0
+	+r(320)
+		padding: 20px 0
 	&__title
 		color: #2d2d2d
 		font-family: Akrobat
@@ -30,18 +50,24 @@
 		text-transform: uppercase
 		text-align: center
 		margin-bottom: 30px
-		+r(600)
+		+r(790)
 			font-size: 40px
 			margin-bottom: 20px
+		+r(500)
+			font-size: 30px
+			margin-bottom: 10px
+		+r(320)
+			font-size: 20px
+			margin-bottom: 5px
 	&__slider
 		position: relative
 	&__slide
 		width: 50px
 	&__slide-wrapper
-		margin: 0 50px 
+		margin: 0 10px 
 	&__image
 		position: relative
-		margin-bottom: 40px
+		margin-bottom: 20px
 		overflow: hidden
 		&:hover img
 			transform: scale(1.1)
@@ -62,10 +88,12 @@
 		color: #2d2d2d
 		font-family: Akrobatbold
 		/*semi bold*/
-		font-size: 22px
+		font-size: 20px
 		text-transform: uppercase
 		margin-bottom: 5px
-		+r(600)
+		+r(768)
+			font-size: 18px
+		+r(790)
 			font-size: 16px
 	&__price
 		color: #2d2d2d
@@ -73,8 +101,10 @@
 		font-size: 16px
 		text-transform: uppercase
 		font-family: Akrobatbold
+		+r(790)
+			font-size: 14px
 		span
 			font-size: 26px
 			color: #d24a43
-			+r(600)
-				font-size: 20px
+			+r(790)
+				font-size: 16px

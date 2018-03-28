@@ -1,0 +1,63 @@
+.popup-video
+	position: fixed
+	width: 100%
+	height: 100vh
+	background-color: rgba(0,0,0,.7)
+	z-index: 45
+	display: none
+	&_active
+		display: block
+.video-wrap
+	padding: 30px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 900px
+	+r(950)
+		width: 600px
+	+r(650)
+		width: 100%
+	.close
+		cursor: pointer
+		position: absolute;
+		right: -3px;
+		top: -3px;
+		width: 30px;
+		height: 30px;
+		opacity: 0.3;
+		z-index: 25 
+		opacity: 1;
+
+	.close:hover 
+		opacity: 1;
+
+	.close:before, .close:after 
+		position: absolute;
+		left: 15px;
+		content: ' ';
+		height: 33px;
+		width: 2px;
+		background-color: #fff;
+
+	.close:before 
+		transform: rotate(45deg);
+
+	.close:after 
+		transform: rotate(-45deg);
+		
+.video-pp
+	position: relative;
+	padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	border: 2px solid #eee
+	iframe 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+.js-btn-popup-video
+	cursor: pointer

@@ -45,8 +45,17 @@ $('.js-hero-exclusive').slick({
     {
       breakpoint: 1024,
       settings: {
-        arrows: false,
+        arrows: true,
+        slidesToShow: 3,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 740,
+      settings: {
+        arrows: true,
         slidesToShow: 2,
+         dots: true,
       }
     },
     {
@@ -54,7 +63,7 @@ $('.js-hero-exclusive').slick({
       settings: {
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: '100px'
+        centerPadding: '60px'
 
       }
     }
@@ -62,7 +71,12 @@ $('.js-hero-exclusive').slick({
 });
 
  
-
+$(function(f) {
+  var element = f('#hid');
+  f(window).scroll(function() {
+    element['fade' + (f(this).scrollTop() > 200 ? 'In' : 'Out')](500);
+  });
+});
 
 $('.hov').hover(function () {
     console.log('sdsdsdsd');
@@ -79,6 +93,10 @@ $('.js-btn-popup').click(function () {
   $('.popup').toggleClass('popup_active');
 });
 
+$('.js-btn-popup-video').click(function () {
+  $('.popup-video').toggleClass('popup-video_active');
+});
+
 
 $(document).ready(function(){
     $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
@@ -91,27 +109,25 @@ $(document).ready(function(){
 });
 
 
- $(document).ready(function() {
-  $('img.animated').hover(
-   function() {
-    $(this).addClass('bounce'); // Добавляем класс bounce
-   },
-   function() {
-    $(this).removeClass('bounce'); // Убираем класс
-   }
-  )})
 
 
-var s = new YMaps.Style();
 
-// Создает стиль значка метки
-s.iconStyle = new YMaps.IconStyle();
-s.iconStyle.href = "/i/maps/icons/photo.png";
-s.iconStyle.size = new YMaps.Point(18, 29);
-s.iconStyle.offset = new YMaps.Point(-9, -29);
-s.iconStyle.href = "/i/maps/icons/photo.png";
-s.iconStyle.size = new YMaps.Point(18, 29);
-s.iconStyle.offset = new YMaps.Point(-9, -29);
-var placemark = new YMaps.Placemark(point, {style: s});
-map.addOverlay(placemark);
-console.info(placemark);
+
+  ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map ("map", {
+            center: [55.752526, 37.621830],
+            zoom: 11
+        });
+
+        var myPlacemark = new ymaps.Placemark([55.724317, 37.159750], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: '../img/icon-map.png',
+          iconImageSize: [37, 50],
+          iconImageOffset: [-3, -42]
+    });
+        myMap.geoObjects.add(myPlacemark);
+    }

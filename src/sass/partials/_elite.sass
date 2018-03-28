@@ -1,59 +1,59 @@
-.elite
-	padding: 70px 0 80px
+.elite 
+	padding: 80px 0 125px
 	max-width: 1900px
 	width: 90%
 	margin: 0 auto
-	+r(600)
-		padding: 60px 0
-	+r(500)
-		padding: 40px 0 0px
-	&__heading
+	@include r(768) 
+		padding: 40px 0
+	+r(425)
+		padding: 20px 0
+	&__heading 
 		color: #1f1f1f
 		font-family: Akrobat
 		font-size: 50px
 		text-transform: uppercase
 		text-align: center
 		margin-bottom: 30px
-		+r(600)
+		+r(768) 
 			font-size: 40px
-			margin-bottom: 25px
-		+r(400)
+			margin-bottom: 25px 
+		+r(425) 
 			font-size: 20px
-			margin-bottom: 10px
-	&__list
+			margin-bottom: 10px  
+	&__list 
 		width: 100%
 		margin: 0 auto
 		display: flex
 		-webkit-justify-content: space-between
 		-webkit-justify-content: space-between
 		justify-content: center
-		+r(1100)
+		+r(1100) 
 			-webkit-flex-wrap: wrap
 			-ms-flex-wrap: wrap
-			flex-wrap: wrap
-	&__image
+			flex-wrap: wrap  
+	&__image 
 		width: 100%
 		position: relative
 		margin-bottom: 20px
 		overflow: hidden
-		&:hover img
-			transform: scale(1.1)
-		+r(1200)
-			margin-bottom: 20px
-		+r(1000)
-			margin-bottom: 20px
-		img
-			max-width: 100%
-	&__item
+		&:hover img 
+			transform: scale(1.1) 
+		+r(1200) 
+			margin-bottom: 20px 
+		+r(1000) 
+			margin-bottom: 20px 
+		img 
+			max-width: 100%  
+	&__item 
 		position: relative
 		margin: 0 25px
 		width: 32%
-		+r(832)
+		@include r(832) 
 			width: 46%
-			margin: 0 10px 30px
-		+r(560)
-			width: 40%
-	&__caption
+			margin: 0 10px 30px 
+		@include r(560) 
+			width: 40%  
+	&__caption 
 		padding: 20px 20px 13px 60px
 		position: absolute
 		background-color: rgba(255,255,255, .2)
@@ -61,11 +61,11 @@
 		left: 0
 		right: 0
 		color: #eee
-		+r(1200)
+		@include r(1200) 
 			padding: 0
 			position: static
-			color: #000
-	&__title
+			color: #000  
+	&__title 
 		color: #eee
 		font-family: Akrobat
 		font-size: 26px
@@ -74,28 +74,28 @@
 		border-bottom: 2px solid #6ac0f3
 		padding-bottom: 17px
 		margin-bottom: 15px
-		+r(1600)
+		@include r(1600) 
 			font-size: 20px
-			border-bottom: none
-		+r(1200)
+			border-bottom: none 
+		@include r(1200) 
 			color: #000
 			padding-bottom: 5px
-			margin-bottom: 5px
-		+r(400)
-			font-size: 18px
-		+r(340)
-			font-size: 16px
-	&__text
+			margin-bottom: 5px 
+		@include r(400) 
+			font-size: 18px 
+		@include r(340) 
+			font-size: 16px  
+	&__text 
 		color: #eee
 		font-family: Akrobat
 		font-size: 18px
 		letter-spacing: 1.14px
-		+r(1600)
-			font-size: 16px
-		+r(1200)
-			font-size: 12px
-			color: #000
-	&__price
+		@include r(1600) 
+			font-size: 16px 
+		@include r(1200) 
+			font-size: 14px
+			color: #000  
+	&__price 
 		text-align: center
 		color: #000000
 		font-family: Akrobat
@@ -104,30 +104,32 @@
 		// Text style for "о, т  ,  р"
 		font-weight: 300
 		// Text style for "652 000"
-		+r(1600)
-			font-size: 20px
-		+r(1200)
+		@include r(1600) 
+			font-size: 20px 
+		@include r(1200) 
 			text-align: left
-			font-size: 12px
-			text-transform: capitalize
-	&__size-price
+			font-size: 14px
+			text-transform: capitalize  
+	&__size-price 
 		color: #d24a43
 		font-family: Akrobatbold
 		font-size: 36px
 		font-weight: 700
-		+r(1600)
-			font-size: 25px
-		+r(1200)
-			font-size: 18px
-.slider-elite__dots
+		@include r(1600) 
+			font-size: 25px 
+		@include r(1200) 
+			font-size: 18px   
+.slider-elite__dots 
 	position: absolute
 	bottom: -40px
-	li
+	+r(800)
+		bottom: -10px
+	li 
 		display: inline-block
-		font-size: 0
-	li+li
-		margin-left: 10px
-	button
+		font-size: 0 
+	li+li 
+		margin-left: 10px 
+	button 
 		font-size: 0
 		display: block
 		width: 15px
@@ -135,30 +137,30 @@
 		background-color: #fff
 		border: 2px solid #000
 		border-radius: 50%
-		.active, &:hover
-			background-color: #000
-	.slick-active button
-		background-color: #000
-.slider-eliete-wrap
-	+r(700)
-		display: none
+		.active, &:hover 
+			background-color: #000  
+	.slick-active button 
+		background-color: #000  
+.slider-eliete-wrap 
+	@include r(700) 
+		display: none  
 .slider__next-elite,
-.slider__prev-elite
+.slider__prev-elite 
 	display: block
 	width: 26px
 	height: 49px
 	position: absolute
 	top: 50%
 	margin-top: -25px
-	+r(700)
-		display: none
-.slider__next-elite
+	@include r(700) 
+		display: none  
+.slider__next-elite 
 	right: -20px
-	+s(arrow-exclusive)
-	transform: rotate(180deg)
-.slider__prev-elite
+	@include s(arrow-exclusive)
+	transform: rotate(180deg) 
+.slider__prev-elite 
 	left: -20px
-	+s(arrow-exclusive)
-.slider-elite-wrap
-	position: relative
-		
+	@include s(arrow-exclusive) 
+.slider-elite-wrap 
+	position: relative 
+

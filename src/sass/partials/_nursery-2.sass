@@ -1,0 +1,127 @@
+.nursery
+	padding: 80px 0
+	font-size: 0
+	+r(530)
+		padding: 40px 0
+	.container
+		max-width: 1024px
+	&__title
+		text-align: center
+		color: #1f1f1f
+		font-family: Akrobat
+		font-size: 50px
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 15px
+		+r(530)
+			font-size: 30px
+			margin-bottom: 10px
+	&__caption
+		padding: 0
+		font-size: 0
+		position: absolute
+		border: 1px solid #fff
+		left: 10px
+		right: 10px
+		top: 10px
+		bottom: 10px
+		span
+			position: absolute
+			bottom: -2px
+			left: -5px
+			right: -5px
+			height: 76px
+			font-size: 18px
+			font-family: Akrobat
+			background-color: rgba(0,0,0, .4) 
+			color: #fff
+			text-transform: uppercase
+			line-height: 76px
+			text-align: center
+			-moz-transform: matrix( 0.96147262338163,0,0,0.95973332538691,0,0)
+			-webkit-transform: matrix( 0.96147262338163,0,0,0.95973332538691,0,0)
+			-ms-transform: matrix( 0.96147262338163,0,0,0.95973332538691,0,0)
+			+r(960)
+				font-size: 16px
+				height: 40px
+				line-height: 40px
+			+r(768)
+				font-size: 12px
+			+r(633)
+				display: none
+			&:after
+				position: absolute
+				display: block
+				content: ''
+				height: 2px
+				background-color: #3eb5f1;
+				margin: 0 auto
+				width: 80%
+				bottom: 20px
+				left: 50%
+				margin-left: -40%
+				+r(960)
+					display: none
+
+	.grid-item:hover img
+		transform: scale(1.1)
+	.big-images
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		margin-bottom: 10px
+		+r(768)
+			margin-bottom: 7px
+		.grid-item
+			position: relative
+			width: 24%
+			overflow: hidden
+			+r(960)
+			&:first-child
+			&:last-child
+			img
+				width: 100%
+	.small-images-video
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		+r(500)
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+		.small-images-wrap,
+		.video
+			width: 49.3%
+			+r(500)
+				width: 100%
+				outline: 1px solid green 
+		.small-images-wrap
+			+r(500)
+				display: flex
+		.video
+			padding-bottom: 10px
+			+r(768)
+				padding-bottom: 7px
+	.small-images
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		margin-bottom: 10px
+		+r(768)
+			margin-bottom: 7px
+		+r(500)
+			width: 48%
+		.grid-item
+			width: 48.5%
+			overflow: hidden
+			+r(500)
+				width: 47%
+			img
+				width: 100%
+	.video
+		position: relative
+		overflow: hidden
+		iframe
+			width: 100%
+			height: 100%
+	

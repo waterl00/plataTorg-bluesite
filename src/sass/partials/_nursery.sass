@@ -25,6 +25,8 @@
 		right: 10px
 		top: 10px
 		bottom: 10px
+		+r(768)
+			display: none
 		span
 			position: absolute
 			bottom: -2px
@@ -62,55 +64,107 @@
 				margin-left: -40%
 				+r(960)
 					display: none
-
-	.grid-item:hover img
-		transform: scale(1.1)
-	.big-images
-		display: flex
-		-webkit-justify-content: space-between
-		justify-content: space-between
-		margin-bottom: 10px
-		+r(768)
-			margin-bottom: 7px
-		.grid-item
-			position: relative
-			width: 24%
-			overflow: hidden
+.grid
+	font-size: 0
+.big-images
+	display: flex
+	-webkit-justify-content: space-between
+	justify-content: space-between
+	.grid-item
+		width: 25%
+		margin-bottom: 20px
+		position: relative
+		+r(960)
+			margin-bottom: 15px
+		+r(650)
+			margin-bottom: 10px
+		+r(400)
+			margin-bottom: 5px
+		img
+			width: 100%
+		& + .grid-item
+			margin-left: 20px
 			+r(960)
-			&:first-child
-			&:last-child
-			img
-				width: 100%
-	.small-images-video
-		display: flex
-		-webkit-justify-content: space-between
-		justify-content: space-between
-		.small-images-wrap,
-		.video
-			width: 49.3%
-			+r(960)
-		.small-images-wrap
-			+r(960)
-		.video
-			padding-bottom: 10px
-			+r(768)
-				padding-bottom: 7px
-	.small-images
-		display: flex
-		-webkit-justify-content: space-between
-		justify-content: space-between
-		margin-bottom: 10px
-		+r(768)
-			margin-bottom: 7px
-		.grid-item
-			width: 48.5%
-			overflow: hidden
-			img
-				width: 100%
+				margin-left: 15px
+			+r(650)
+				margin-left: 10px
+			+r(400)
+				margin-left: 5px
+.small-images-video
+	display: flex
+	-webkit-justify-content: space-between
+	justify-content: space-between
+	align-items: stretch
+	.small-images, .video
+		width: 50%
+		img
+			width: 100%
 	.video
 		position: relative
-		overflow: hidden
-		iframe
-			width: 100%
+		cursor: pointer
+		span
+			display: block
 			height: 100%
-	
+			img
+				height: 100%
+		.play
+			position: absolute
+			display: block
+			width: 64px
+			height: 64px
+			border: 3px solid #61adec
+			border-radius: 50%
+			background-color: #232323
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			&:after
+				display: block
+				content: ''
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 14px 0 14px 28px
+				border-color: transparent transparent transparent #61aeec
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				margin-left: 5px
+
+	.small-images
+		margin-right: 20px
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		+r(960)
+			margin-right: 15px
+		+r(650)
+			margin-right: 10px
+		+r(400)
+			margin-right: 5px
+		img
+			width: 100%
+		&-row
+			display: flex
+		.small-image + .small-image
+			margin-left: 20px
+			+r(960)
+				margin-left: 15px
+			+r(650)
+				margin-left: 10px
+			+r(400)
+				margin-left: 5px
+		.small-images-row + .small-images-row
+			margin-top: 20px
+			+r(960)
+				margin-top: 15px
+			+r(650)
+				margin-top: 10px
+			+r(400)
+				margin-top: 5px
+
+

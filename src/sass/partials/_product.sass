@@ -1,11 +1,9 @@
 .product
-	padding: 60px 0
-	+r(820)
-		padding: 45px 0
-	+r(700)
-		padding: 35px 0
-	+r(500)
+	padding: 80px 0 0
+	+r(840)
 		padding: 20px 0
+	+r(500)
+		padding: 0px 0
 	&__wrapper
 		max-width: 960px
 		margin: 0 auto
@@ -22,62 +20,59 @@
 		font-family: Akrobatbold
 		font-size: 36px
 		text-transform: uppercase
-		margin-bottom: 67px
+		margin-bottom: 15px
 		&_blue
 			font-family: Akrobat
 			color: #4890bd
 		&_extra
 			font-family: Akrobat
-		+r(530)
+		+r(500)
 			font-size: 20px
-			margin-bottom: 40px 
+			margin-bottom: 20px 
 	&__sale
 		color: red
 		font-family: KobzarKS
 		color: #d24a43
 		position: absolute
-		top: 15px
+		top: -70px
 		right: 0
-		width: 248px
-		height: 145px
-		+r(1105)
+		width: 230px
+		height: 125px
+		+r(840)
 			display: none
 	&__sale-size
 		position: absolute
-		font-size: 110px
+		font-size: 93px
 		line-height: 1
 		letter-spacing: 5.42px
+		font-weight: bold
 		top: 0
 		left: 0
 	&__sale-caption
 		position: absolute
 		color: #d24a43
 		font-size: 17px
-		transform: rotate(-15deg)
+		transform: rotate(-20deg)
 		letter-spacing: 0.89px
 		right: 0
 		bottom: 0
+		text-align: left
 	&__list
-		margin-bottom: 150px
-		display: inline-block
 		position: relative
-		+r(1105)
-			margin-bottom: 200px
-			zoom: 0.7
-			left: 50%
-			transform: translate(-50%, 0)
-		+r(670)
-			zoom: 0.6
-		+r(570)
-			zoom: 0.5
-		+r(500)
-			zoom: 0.65
-			margin-bottom: 230px
-
+		max-width: 960px
+		margin: 0 auto 50px
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		+r(944)
+			width: 90%
 	&__image
-		width: 337px
-		float: left
+		max-width: 421px
+		width: 36%
 		position: relative
+		top: 19px
+		+r(944)
+			width: 337px
 		&:after
 			display: block
 			content: ''
@@ -87,35 +82,53 @@
 			bottom: 10px
 			right: 10px
 			border: 1px solid #fff
-		+r(100)
-			margin: 0 auto 20px
-			margin: 0
-			position: static
-			width: 50%
-			float: left
-			height: 200px
 		img
-			max-width: 100%
-			height: 100%
+			width: 100%
+	&__stock
+		text-align: center
+		width: 32%
+		margin-left: -30px
 	&__quality
 		position: absolute
-		right: -39px
-		bottom: -39px
-		z-index: 9
+		right: -10px
+		bottom: -10px
+		width: 50px
+		img
+			width: 100%
+		+r(350)
+			display: none
 		+r(500)
 			right: -20px
 			bottom: -20px
+			width: 50px
+	&__remainder
+		width: 32%
+		position: relative
+		top: 30px
 	&__sale-image
 		width: 76px
 		height: 76px
 		position: absolute
-		padding: 17px 7px;
 		display: inline-block;
 		text-align: center;
 		left: -38px
 		top: -38px
 		border: 2px solid #7b7b7b;
 		background-color: rgba(249, 248, 255, 0.8)
+		line-height: 72px
+		+r(730)
+			font-size: 16px
+			width: 40px
+			height: 40px
+			line-height: 36px
+			left: -20px
+			top: -20px
+		+r(500)
+			width: 40px
+			height: 40px
+			font-size: 16px
+			left: 0
+			top: 0
 		span
 			display: block
 			color: #d24a43
@@ -124,85 +137,92 @@
 			font-size: 27px
 			text-transform: uppercase
 			letter-spacing: 2.07px
-	&__stock
-		padding: 0
-		width: 330px
-		float: left
-		margin-left: -34px
-		margin-top: -36px
-		background-color: #7F7F7F
-		text-align: center
-		z-index: -2
-		+r(101)
-			float: right
-			margin: 0 0 20px 0
-			padding: 0
-		+r(100)
-			float: right
-			width: 50%
-			margin: 0 auto
-			height: 200px
-	&__remainder
-		margin-top: 60px
-		width: 316px
-		float: left
-		+r(500)
-			float: none
-			position: absolute
-			right: 0
-			bottom: 40px 
-	&__caption
-		position: absolute
-		bottom: 0
-		left: 400px
-		+r(500)
-			bottom: -70px
-			left: 0
-			right: 0
-			text-align: center
-
+			+r(730)
+				font-size: 16px
+				line-height: 36px
 .product-stock
-	padding-top: 28px
+	box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.25);
+	border: 1px solid rgba(0, 0, 0, 0.75)
+	background-color: #808080 
+	+r(944)
+		width: 343px
+	+r(680)
+	&__content
+		background-color: #767676
+		padding-top: 23px
+		+r(680)
+			padding-top: 10px
+	
 	&__title
 		color: #ffffff;
 		font-family: Akrobatbold
-		background-color: #808080 
-		/*SemiBold*/
-		font-size: 48px
-		text-transform: uppercase
+		font-size: 41px;
+		font-weight: bold;
+		text-transform: uppercase;
+		/* Text style for "акция" */
 		letter-spacing: 2.92px
-		padding-bottom: 6px
+		line-height: 1em
+		padding-top:  27px
+		padding-bottom: 17px
+		position: relative
+		+r(680)
+			font-size: 30px
+			padding: 10px 0
 		+r(500)
-			padding-bottom: 16px
+			font-size: 20px
 		&:after
 			display: block
 			content: ''
-			height: 2px
+			position: absolute
+			bottom: 1px
 			width: 114px
+			height: 2px;
 			background-color: #3eb5f1
-			margin: 2px auto 3px
-	&__content
-		background-color: #767676
+			left: 50%
+			margin-left: -57px
 	&__text
 		color: #e7e0d6;
-		font-family: Akrobat
-		font-size: 18px
-		text-transform: uppercase
-		letter-spacing: 1.09px
-		line-height: 2em
+		font-family: Akrobat;
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		/* Text style for "т, олько Н" */
+		+r(680)
+			padding: 10px 0
+		+r(500)
+			padding-left: 10px
+			font-size: 14px
+			text-transform: lowercase
 		&_bg
-			font-weight: 700 
 			background-color: #808080
-			line-height: 40px
+			padding: 11px 0
 	&__old-price
+		display: block
+		font-size: 26px;
+		font-weight: 400;
+		text-decoration: line-through;
+		text-transform: uppercase;
+		letter-spacing: 1.82px
+		margin: 15px 0
+		+r(680)
+			font-size: 20px
+			margin: 5px 0
+		+r(500)
+			font-size: 16px
+	&__new-price
 		text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.15);
-		color: #fd7979
-		font-family: Akrobat
-		font-size: 48px
-		font-weight: bold
+		color: #fd7979;
+		font-family: Akrobat;
+		font-size: 45px;
+		font-weight: bold;
 		text-transform: uppercase
 		letter-spacing: 2.92px
-		margin-bottom: 10px
+		margin-bottom: 23px
+		+r(680)
+			font-size: 30px
+			margin-bottom: 10px
+		+r(500)
+			font-size: 20px
 	&__button
 		box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25)
 		border: 1px solid rgba(0, 0, 0, 0.35)
@@ -214,13 +234,17 @@
 		font-size: 12px
 		font-weight: 400
 		text-transform: uppercase
-		letter-spacing: 0.9px
 		margin-bottom: 18px
+		+r(500)
+			margin-left: 10px
+			font-size: 14px
+			text-transform: lowercase
+			padding: 5px 10px
 			
 .remainder
 	background-color: #ECEDED
-	+r(500)
-		background-color: transparent
+	+r(944)
+		display: none
 	&__wrapper
 		position: relative
 		padding: 15px 7px
@@ -239,6 +263,8 @@
 		/* Text style for "157" */
 		span
 			color: #d24a43;
+		+r(500)
+			display: none
 	&__content
 		border: 1px solid #53a0cc
 		padding:  20px
@@ -272,27 +298,41 @@
 		padding: 10px 0
 		+r(500)
 			background-color: transparent
-			z-index: -1
+			z-index: -1		
 .caption
+	position: absolute
+	right: 40px
+	bottom: -5px
+	@-moz-document url-prefix()
+		bottom: -15px
+	+r(944)
+		display: none
 	&__text
 		color: #555555
 		font-family: Akrobatbold
 		font-size: 22px
+		+r(500)
+			font-size: 16px
 		&_bold
 			color: #53a0cc
 			text-transform: uppercase
-		+r(100)
-			font-size: 16px
+	&_bottom
+		display: none
+		position: static
+		text-align: center
+		margin-bottom: 20px
+		+r(944)
+			display: block
 			
 .info
 	text-align: center
 	padding: 20px 30px
 	background-color: #53A0CC
-	margin-top: -100px
+	width: 100%
+	margin: 0 auto
 	+r(640)
 		background-color: #fff
 	+r(800)
-		width: 100%
 		padding: 10px 10px
 	&__wrapper
 		padding: 20px 0
@@ -360,6 +400,7 @@
 		font-size: 24px
 		line-height: 34px
 		text-transform: uppercase
+		margin-bottom: 10px
 		+r(640)
 			font-size: 20px
 .info-table
@@ -421,7 +462,7 @@
 			border-left: none
 			+r(1000)
 				display: none
-		:before
+		&:before
 			position: absolute
 			display: block
 			position: absolute

@@ -1,0 +1,132 @@
+.goods
+	padding: 40px 0
+	.container
+		max-width: 948px
+		margin: 0 auto
+	+r(1400)
+	&__title
+		text-align: center
+		color: #1f1f1f
+		font-family: Akrobat
+		font-size: 60px
+		text-transform: uppercase
+		color: #010101
+		margin-bottom: 30px
+		+r(375)
+			font-size: 40px
+			margin-bottom: 20px
+		span
+			color: #4890bd
+	&__sale
+		position: absolute
+		font-size: 20px
+		color: #FFF
+		top: 4px
+		left: -52px
+		width: 250px
+		box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.35)
+		background-color: #ffd357
+		transform: rotate(-30deg)
+		padding: 10px 0
+		text-align: center
+		color: #3b3b3b
+		font-family: "Lucida Sans Unicode"
+		font-size: 37px
+		font-weight: 400
+		text-transform: uppercase
+		+r(800)
+			font-size: 16px
+			text-align: center
+			box-shadow: none
+			top: 7px
+			left: -20px
+			padding: 5px
+			width: 125px
+	&__images-wrapper
+		+clr
+		font-size: 0
+		display: flex
+	&__image-wrap
+		width: 50%
+		margin-right: 25px
+		&:last-child
+			margin-right: 0
+	&__image
+		position: relative
+		overflow: hidden
+		width: 100%
+		&:hover img
+			transform: scale(1.1)
+		+r(700)
+			display: block
+			margin: 0 auto 20px
+		+r(375)
+		&:after
+			display: block
+			content: ''
+			position: absolute
+			top: 10px
+			bottom: 10px
+			right: 10px
+			left: 10px
+			border: 1px solid #fff
+		img
+			width: 100%
+		&_big
+		&_small
+			margin-bottom: 20px
+	&__description
+		+clr
+		position: relative
+	&__table
+		float: left
+		width: 48.5%
+		+r(425)
+			width: 57%
+		&-head
+			font-family: Akrobatbold
+			background-color: #dcdcdc
+			text-transform: uppercase
+			/*semi bold*/
+		td
+			padding: 17px 0
+			border: 1px solid #000000
+			text-align: center
+			color: #3b3b3b
+			font-family: Akrobat
+			font-size: 26px
+			+r(800)
+				font-size: 16px
+				padding: 5px 0
+			+r(425)
+				font-size: 14px
+		td.active
+			background-color: #ffd357
+			span
+				color: #d51a1a
+	&__button
+		float: right
+		padding: 14px 22px
+		border: 2px solid #4890bd
+		text-align: center
+		border-radius: 20px
+		background-color: transparent
+		color: #3b3b3b
+		font-family: Akrobat
+		/*semi bold*/
+		font-size: 28px
+		text-transform: uppercase
+		position: absolute
+		bottom: 0
+		right: 0
+		+r(800)
+			font-size: 16px
+		+r(425)
+			border-radius: 12px
+			padding: 7px 5px
+			font-size: 14px
+			
+
+				
+			
+			
