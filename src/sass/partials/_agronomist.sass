@@ -7,6 +7,8 @@
 		padding: 20px 0
 	+r(500)
 		padding: 20px 0
+	+r(370)
+		padding: 20px 0 70px
 	&_design
 		padding-bottom: 20px
 	&__heading
@@ -34,16 +36,19 @@
 		max-width: 700px
 		display: flex
 		margin: 0 auto
-		flex-direction: row-reverse
-		align-items: center
+		-webkit-align-items: flex-start
+		align-items: flex-start
+		position: relative
 		+r(768)
-			width: 90%
+			width: 100%
 		&_design
-			flex-direction: row
 			position: relative
 	&__image-wrapper
 		position: relative
 		width: 40%
+		margin-right: 20px
+		display: inline-block
+		float: left
 		&:after
 			display: block
 			content: ''
@@ -62,11 +67,17 @@
 				display: none
 			+r(768)
 				bottom: -20px
+			+r(740)
+				left: 0
+				transform: scale(1)
+				bottom: 0
 		img
 			width: 100%
 	&__wrapper
 		width: 60%
 		margin-right: 20px
+		+r(425)
+			margin-right: 0
 	&__title
 		color: #e7e0d6
 		font-family: Akrobat
@@ -95,10 +106,10 @@
 		font-family: Akrobat
 		font-size: 16px
 		font-weight: 400
-		text-transform: uppercase
 		margin-bottom: 25px
 		margin-bottom: 10px
 		+r(820)
+			font-size: 14px
 			margin-bottom: 15px
 		+r(700)
 			margin-bottom: 10px
@@ -118,17 +129,44 @@
 		/*semi bold*/
 		font-size: 16px
 		text-transform: uppercase
-		+r(500)
+		+r(630)
 			font-size: 12px
 			padding: 10px 10px
-			border-radius: 10px
+			border-radius: 15px
+		+r(370)
+			padding: 10px 9px
+			font-size: 11px
+			position: absolute
+			left: 50%
+			bottom: -50px
+			transform: translate(-50%,0)
 .painting
 	position: absolute
 	bottom: 10px
 	right: 0
 	transform: rotate(-20deg)
+	+r(535)
+		bottom: 0
+	+r(490)
+		bottom: -10px
+	+r(450)
+		bottom: -15px
+		display: none
+	+r(375)
+	+r(350)
+
 	svg
 		fill: #fff
 		font-size: 70px
-	+r(700)
-		display: none
+		+r(650)
+			font-size: 60px
+		+r(560)
+			font-size: 50px
+		+r(480)
+			font-size: 40px
+		+r(375)
+			font-size: 30px
+		+r(370)
+			font-size: 40px
+		+r(350)
+			font-size: 35px

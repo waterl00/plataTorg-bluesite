@@ -62,17 +62,22 @@
 		max-width: 960px
 		margin: 0 auto 50px
 		display: flex
-		justify-content: center
+		-webkit-justify-content: space-between
+		justify-content: space-between
 		align-items: flex-start
-		+r(944)
+		+r(500)
 			width: 90%
 	&__image
 		max-width: 421px
 		width: 36%
 		position: relative
 		top: 19px
+		font-size: 0
 		+r(944)
 			width: 337px
+		+r(425)
+			position: static
+			float: left
 		&:after
 			display: block
 			content: ''
@@ -86,13 +91,14 @@
 			width: 100%
 	&__stock
 		text-align: center
-		width: 32%
+		width: 400px
 		margin-left: -30px
 	&__quality
 		position: absolute
 		right: -10px
 		bottom: -10px
-		width: 50px
+		width: 70px
+		z-index: 35
 		img
 			width: 100%
 		+r(350)
@@ -106,6 +112,7 @@
 		position: relative
 		top: 30px
 	&__sale-image
+		z-index: 35
 		width: 76px
 		height: 76px
 		position: absolute
@@ -227,7 +234,7 @@
 		box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.25)
 		border: 1px solid rgba(0, 0, 0, 0.35)
 		background-color: #ffd357
-		border-radius: 10px
+		border-radius: 15px
 		padding: 14px
 		color: #2d2d2d
 		font-family: Akrobat
@@ -240,6 +247,7 @@
 			font-size: 14px
 			text-transform: lowercase
 			padding: 5px 10px
+			border-radius: 10px 
 			
 .remainder
 	background-color: #ECEDED
@@ -403,6 +411,7 @@
 		margin-bottom: 10px
 		+r(640)
 			font-size: 20px
+			border-radius: 15px 
 .info-table
 	border: none
 	position: relative
@@ -461,20 +470,6 @@
 			border: 1px solid rgba(232, 232, 232, 1)
 			border-left: none
 			+r(1000)
-				display: none
-		&:before
-			position: absolute
-			display: block
-			position: absolute
-			display: block
-			content: ''
-			height: 120px
-			width: 1px
-			background: url('../img/bg-table.png') 50% 0 no-repeat
-			background-size: cover
-			top: 0
-			right: 0
-			+r(800)
 				display: none
 	&__row_grow
 		background-color: #626262

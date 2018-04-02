@@ -1,14 +1,14 @@
 <!-- begin product -->
 <section class="product" id="scroll-product">
-	<div class="container">
+	<div class="product__wrapper">
 		<div class="product__title">сосна <span class="product__title_blue">обыкновенная</span> <span class="product_tile_extra">(extra)</span></div>
 		<div class="product__sale">
 			<div class="product__sale-size">50%</div>
 			<div class="product__sale-caption">на деревья в <br>питомнике</div>
 		</div>
-		<div class="product__content">
+		<div class="product__list">
 			<div class="product__image">
-				<img src="img/product-1.jpg" alt="сосна обыкновенная (EXTRA)">
+				<img src="picture/product-1.jpg" alt="сосна обыкновенная (EXTRA)">
 				<div class="product__sale-image">
 					<span>50%</span>
 				</div>
@@ -17,25 +17,109 @@
 			<div class="product__stock product-stock">
 				<div class="product-stock__title"><span>акция</span></div>
 				<div class="product-stock__content">
-					<p class="product-stock__text">только на деревья 2-3м<br><s>10 000 р</s></p>
-					<p class="product-stock__old-price">5000</p>
-					<button class="product-stock__button">купить со скидкой</button>
+					<p class="product-stock__text"><span class="hide">только </span>на деревья 2-3м<s class="product-stock__old-price">10 000 р</s></p>
+					<p class="product-stock__new-price">5000</p>
+					<button class="product-stock__button js-btn-popup">купить<span class="hide"> со скидкой</span></button>
 					<p class="product-stock__text product-stock__text_bg">до 17.03.2017</p>
 				</div>
 			</div>
 			<div class="product__remainder remainder">
-				<div class="remainder__content">
-					<p class="remainder__text s">Быстрая доставка по Москве и <br>Московской области</p>
-					<p class="remainder__text s">Посадка деревьев за <span>1 день</span></p>
-					<p class="remainder__phone">+7 (495) 764-97-07</p>
+				<div class="remainder__wrapper">
+					<p class="remainder__top">скидкой воспользовались <span>250</span> человек</p>
+					<div class="remainder__content">
+						<p class="remainder__text">Быстрая доставка по Москве и <br>Московской области</p>
+						<p class="remainder__text">Посадка деревьев за <span>1 день</span></p>
+						<p class="remainder__phone">+7 (495) 764-97-07</p>
+					</div>
 				</div>
 				<div class="remainder__image">
 					<img src="/img/payment.png" alt="">
 				</div>
 			</div>
+				
 			<div class="product__caption caption">
-				<p class="caption__text">Дерево высотой 25—40 м и диаметром ствола 0,5—1,2 м</p>
+				<p class="caption__text">Дерево высотой 2-3 м и диаметром кроны </p>
 				<p class="caption__text caption__text_bold">рекомендовано для посадки в июле</p>
+			</div>
+		</div>
+		<div class="product__caption caption caption_bottom">
+			<p class="caption__text">Дерево высотой 2—3 м и диаметром кроны</p>
+			<p class="caption__text caption__text_bold">рекомендовано для посадки в июле</p>
+		</div>
+		<div class="product__info info">
+			<div class="info__wrapper">
+				<div class="info__title">информация о наличии</div>
+				<table class="info__table info-table transp">
+					<tr class="info-table__row info-table__row_first">
+						<td class="info-table__head">Высота</td>
+						<td>1 -1,4 м</td>
+						<td>1 - 1,6 м</td>
+						<td>1 - 1,8 м</td>
+						<td>1 - 2,0 м</td>
+						<td>2 - 4,4 м</td>
+					</tr>
+					<tr class="info-table__row info-table__row_grow">
+						<td class="info-table__head">Цена</td>
+						<td class="hov">1000 руб</td>
+						<td class="hov">2000 руб</td>
+						<td class="hov">3500 руб</td>
+						<td class="hov hov-active">5990 руб</td>
+						<td class="hov">10100 руб</td>
+					</tr>
+				</table>
+				<table class="info__tablle-small">
+					<tr>
+						<td>
+							высота
+						</td>
+						<td class="info__tablle-small_price">
+							цена
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="sm-price">120-140 </span><span class="sm-ed">см</span>
+						</td>
+						<td class="info__tablle-small_price">
+							<span class="sm-price">1000</span><span class="sm-ed">руб</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="sm-price">140-160 </span><span class="sm-ed">см</span>
+						</td>
+						<td class="info__tablle-small_price">
+							<span class="sm-price">2000 </span><span class="sm-ed">руб</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="sm-price">160-180 </span><span class="sm-ed">см</span>
+						</td>
+						<td class="info__tablle-small_price">
+							<span class="sm-price">3500 </span><span class="sm-ed">руб</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="sm-price">180-200 </span><span class="sm-ed">см</span>
+						</td>
+						<td class="info__tablle-small_price">
+							<span class="sm-price">5990 </span><span class="sm-ed">руб</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="sm-price">220-440 </span><span class="sm-ed">см</span>
+						</td>
+						<td class="info__tablle-small_price">
+							<span class="sm-price">10100 </span><span class="sm-ed">руб</span>
+						</td>
+					</tr>
+				</table>
+				<div class="info__button-wrap">
+					<button class="info__button js-btn-popup">купить</button>
+				</div>
 			</div>
 		</div>
 	</div>

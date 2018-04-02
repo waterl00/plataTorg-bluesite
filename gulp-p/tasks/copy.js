@@ -28,8 +28,16 @@ gulp.task('copy:img', function() {
         .pipe(gulp.dest(config.dest.img));
 });
 
+gulp.task('copy:pic', function() {
+    return gulp
+        .src([
+            config.src.pic + '/**/*.{jpg,png,jpeg,svg,gif}'
+        ])
+        .pipe(gulp.dest(config.dest.pic));
+})
 gulp.task('copy', [
     'copy:img',
+    'copy:pic',
     // 'copy:rootfiles',
     // 'copy:lib',
     'copy:fonts'

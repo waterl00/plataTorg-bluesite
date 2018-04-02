@@ -3,10 +3,11 @@
 	max-width: 1900px
 	width: 90%
 	margin: 0 auto
-	@include r(768) 
+	+r(768) 
 		padding: 40px 0
-	+r(425)
+	+r(500)
 		padding: 20px 0
+		width: 100%
 	&__heading 
 		color: #1f1f1f
 		font-family: Akrobat
@@ -26,75 +27,111 @@
 		display: flex
 		-webkit-justify-content: space-between
 		-webkit-justify-content: space-between
-		justify-content: center
+		justify-content: space-between
+		
 		+r(1100) 
 			-webkit-flex-wrap: wrap
 			-ms-flex-wrap: wrap
-			flex-wrap: wrap  
+			flex-wrap: wrap 
+		+r(500)
+			-webkit-justify-content: space-between
+			justify-content: space-between
+			padding: 0 5px
 	&__image 
 		width: 100%
 		position: relative
 		margin-bottom: 20px
 		overflow: hidden
+		font-size: 0
+		&:after
 		&:hover img 
 			transform: scale(1.1) 
-		+r(1200) 
+		+r(1200)
+			max-height: 565px
 			margin-bottom: 20px 
 		+r(1000) 
-			margin-bottom: 20px 
+			margin-bottom: 20px
+		+r(500)
+			width: 100%
+			margin-bottom: 0
+			height: 300px
+		+r(440)
+			height: 250px
+		+r(370)
+			height: 230px
 		img 
-			max-width: 100%  
+			max-width: 100%
+			+r(500)
+				height: 100%
 	&__item 
 		position: relative
 		margin: 0 25px
 		width: 32%
-		@include r(832) 
+		+r(832) 
 			width: 46%
 			margin: 0 10px 30px 
-		@include r(560) 
-			width: 40%  
+		+r(500) 
+			width: 50%
+			margin: 0
+			padding: 0 5px
+			margin-bottom: 10px
+			&:nth-child(2n)
+				padding-right: 0
+				.elite__caption
+					right: 0
 	&__caption 
-		padding: 20px 20px 13px 60px
+		padding: 5px 5px 30px 30px
 		position: absolute
-		background-color: rgba(255,255,255, .2)
-		top: 40px
+		background-color: rgba(0,0,0,.45)
+		top: 20px
 		left: 0
 		right: 0
 		color: #eee
-		@include r(1200) 
-			padding: 0
-			position: static
-			color: #000  
+		+r(1024)
+			padding: 10px 20px 
+		+r(500)
+			position: absolute
+			top: 15px
+			left: 5px
+			right: 5px
+			color: #fff
+			text-align: left
+			padding: 5px 25px 10px 10px
 	&__title 
-		color: #eee
+		color: #fff
 		font-family: Akrobat
 		font-size: 26px
 		text-transform: uppercase
 		max-width: 252px
-		border-bottom: 2px solid #6ac0f3
-		padding-bottom: 17px
-		margin-bottom: 15px
-		@include r(1600) 
+		border-bottom: 1px solid rgba(106, 192, 243, .7)
+		padding-bottom: 5px
+		margin-bottom: 5px
+		padding-right: 20px
+		+r(1600) 
 			font-size: 20px
-			border-bottom: none 
-		@include r(1200) 
-			color: #000
+		+r(1200) 
 			padding-bottom: 5px
 			margin-bottom: 5px 
-		@include r(400) 
+		+r(500) 
 			font-size: 18px 
-		@include r(340) 
-			font-size: 16px  
+			padding: 0
+			margin-bottom: 0
+		+r(340) 
+			font-size: 14px 
+			color: #fff
+			text-align: left
 	&__text 
 		color: #eee
 		font-family: Akrobat
 		font-size: 18px
 		letter-spacing: 1.14px
-		@include r(1600) 
-			font-size: 16px 
-		@include r(1200) 
+		+r(1000)
+			font-size: 16px
+		+r(800)
 			font-size: 14px
-			color: #000  
+		+r(700)
+			display: none
+		
 	&__price 
 		text-align: center
 		color: #000000
@@ -104,20 +141,22 @@
 		// Text style for "о, т  ,  р"
 		font-weight: 300
 		// Text style for "652 000"
-		@include r(1600) 
+		+r(1600) 
 			font-size: 20px 
-		@include r(1200) 
+		+r(1200) 
 			text-align: left
 			font-size: 14px
-			text-transform: capitalize  
+			text-transform: lowercase 
+		+r(500)
+			text-align: center
 	&__size-price 
 		color: #d24a43
 		font-family: Akrobatbold
 		font-size: 36px
 		font-weight: 700
-		@include r(1600) 
+		+r(1600) 
 			font-size: 25px 
-		@include r(1200) 
+		+r(1200) 
 			font-size: 18px   
 .slider-elite__dots 
 	position: absolute
@@ -142,7 +181,7 @@
 	.slick-active button 
 		background-color: #000  
 .slider-eliete-wrap 
-	@include r(700) 
+	+r(700) 
 		display: none  
 .slider__next-elite,
 .slider__prev-elite 
@@ -152,15 +191,15 @@
 	position: absolute
 	top: 50%
 	margin-top: -25px
-	@include r(700) 
+	+r(700) 
 		display: none  
 .slider__next-elite 
 	right: -20px
-	@include s(arrow-exclusive)
+	+s(arrow-exclusive)
 	transform: rotate(180deg) 
 .slider__prev-elite 
 	left: -20px
-	@include s(arrow-exclusive) 
+	+s(arrow-exclusive) 
 .slider-elite-wrap 
 	position: relative 
 

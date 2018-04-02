@@ -11,21 +11,14 @@
     <meta name="theme-color" content="#fff" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <!--link href="/img/ico.png" type="image/png" rel="apple-touch-icon"-->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
-    <!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">-->
-    <link rel="stylesheet" media="all" href="css/app.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    <link rel="stylesheet" media="all" href="css/app.css" /> </head>
 
-
-    </script>
-  </head>
-
-  <body style="zoom: 1">
+  <body>
     <!-- BEGIN content -->
     <div class="popup">
       <form action="#"> <span class="close js-btn-popup"></span>
@@ -60,7 +53,7 @@
             <li class="contacts__item"><a href="tel:+74959984319" class="contacts__link contacts__link_phone">+7 (495) 998-43-19</a></li>
             <li class="contacts__item"><a href="mailto:vamsadik@mail.ru" class="contacts__link contacts__link_email">vamsadik@mail.ru</a></li>
             <li><button class='contacts__button js-btn-popup'>отправить заказ</button></li>
-          </ul> <a class="top-button go_to" href="#" id="hid">Наверх</a> </div>
+          </ul> <a class="top-button go_to" href="#scroll-hero" id="hid">Наверх</a> </div>
       </div>
       <div class="slider">
         <div class="slider__arrows">
@@ -68,22 +61,22 @@
           <div class="slider__next"></div>
         </div>
         <div class="slides js-hero">
-          <div class="slide" style="background-image: url('img/slide-1.jpg');">
+          <div class="slide" style="background-image: url('picture/slide-1.jpg');">
             <div class="slide__content">
               <h1 class="slide__title">лучшие пихты</h1>
               <div class="slide__sub-title">только в марте</div> <button class="button slide__button">посмотреть питомник</button> </div>
           </div>
-          <div class="slide" style="background-image: url('img/slide-2.jpg');">
+          <div class="slide" style="background-image: url('picture/slide-2.jpg');">
             <div class="slide__content">
               <div class="slide__title">хвойные деревья</div>
               <div class="slide__sub-title">всегда зеленые</div> <button class="button slide__button">посмотреть питомник</button> </div>
           </div>
-          <div class="slide" style="background-image: url('img/slide-3.jpg');">
+          <div class="slide" style="background-image: url('picture/slide-3.jpg');">
             <div class="slide__content">
               <div class="slide__title slide__title_large-scale">деревья крупномеры</div>
               <div class="slide__sub-title">для посадки в ноябре</div> <button class="button slide__button slide__button_large-scale">посмотреть питомник</button> </div>
           </div>
-          <div class="slide" style="background-image: url('img/slide-4.jpg');">
+          <div class="slide" style="background-image: url('picture/slide-4.jpg');">
             <div class="slide__content">
               <div class="slide__title slide__title_fruit-trees">плодовые деревья</div>
               <div class="slide__sub-title slide__sub-title_fruit-trees">в нашем питомнике</div> <button class="button slide__button">посмотреть питомник</button> </div>
@@ -121,15 +114,15 @@
           <div class="product__sale-caption">на деревья в <br>питомнике</div>
         </div>
         <div class="product__list">
-          <div class="product__image"> <img src="img/product-1.jpg" alt="сосна обыкновенная (EXTRA)">
+          <div class="product__image"> <img src="picture/product-1.jpg" alt="сосна обыкновенная (EXTRA)">
             <div class="product__sale-image"> <span>50%</span> </div>
             <div class="product__quality"><img src="img/quality.png" alt=""></div>
           </div>
           <div class="product__stock product-stock">
             <div class="product-stock__title"><span>акция</span></div>
             <div class="product-stock__content">
-              <p class="product-stock__text">только на деревья 2-3м<s class="product-stock__old-price">10 000 р</s></p>
-              <p class="product-stock__new-price">5000</p> <button class="product-stock__button js-btn-popup">купить со скидкой</button>
+              <p class="product-stock__text"><span class="hide">только </span>на деревья 2-3м<s class="product-stock__old-price">10 000 р</s></p>
+              <p class="product-stock__new-price">5000</p> <button class="product-stock__button js-btn-popup">купить<span class="hide"> со скидкой</span></button>
               <p class="product-stock__text product-stock__text_bg">до 17.03.2017</p>
             </div>
           </div>
@@ -145,12 +138,12 @@
             <div class="remainder__image"> <img src="/img/payment.png" alt=""> </div>
           </div>
           <div class="product__caption caption">
-            <p class="caption__text">Дерево высотой 25—40 м и диаметром ствола 0,5—1,2 м</p>
+            <p class="caption__text">Дерево высотой 2-3 м и диаметром кроны </p>
             <p class="caption__text caption__text_bold">рекомендовано для посадки в июле</p>
           </div>
         </div>
         <div class="product__caption caption caption_bottom">
-          <p class="caption__text">Дерево высотой 25—40 м и диаметром ствола 0,5—1,2 м</p>
+          <p class="caption__text">Дерево высотой 2—3 м и диаметром кроны</p>
           <p class="caption__text caption__text_bold">рекомендовано для посадки в июле</p>
         </div>
         <div class="product__info info">
@@ -159,11 +152,11 @@
             <table class="info__table info-table transp">
               <tr class="info-table__row info-table__row_first">
                 <td class="info-table__head">Высота</td>
-                <td>120-140 см</td>
-                <td>140-160 см</td>
-                <td>160-180 см</td>
-                <td>180-200 см</td>
-                <td>220-440 см</td>
+                <td>1 -1,4 м</td>
+                <td>1 - 1,6 м</td>
+                <td>1 - 1,8 м</td>
+                <td>1 - 2,0 м</td>
+                <td>2 - 4,4 м</td>
               </tr>
               <tr class="info-table__row info-table__row_grow">
                 <td class="info-table__head">Цена</td>
@@ -176,28 +169,28 @@
             </table>
             <table class="info__tablle-small">
               <tr>
-                <td> ВЫСОТА </td>
-                <td class="info__tablle-small_price"> ЦЕНА </td>
+                <td> высота </td>
+                <td class="info__tablle-small_price"> цена </td>
               </tr>
               <tr>
-                <td> 120-140 см </td>
-                <td class="info__tablle-small_price"> 1000 руб </td>
+                <td> <span class="sm-price">120-140 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">1000</span><span class="sm-ed">руб</span> </td>
               </tr>
               <tr>
-                <td> 140-160 см </td>
-                <td class="info__tablle-small_price"> 2000 руб </td>
+                <td> <span class="sm-price">140-160 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">2000 </span><span class="sm-ed">руб</span> </td>
               </tr>
               <tr>
-                <td> 160-180 см </td>
-                <td class="info__tablle-small_price"> 3500 рую </td>
+                <td> <span class="sm-price">160-180 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">3500 </span><span class="sm-ed">руб</span> </td>
               </tr>
               <tr>
-                <td> 180-200 см </td>
-                <td class="info__tablle-small_price"> 5990 руб </td>
+                <td> <span class="sm-price">180-200 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">5990 </span><span class="sm-ed">руб</span> </td>
               </tr>
               <tr>
-                <td> 220-440 см </td>
-                <td class="info__tablle-small_price"> 10100 руб </td>
+                <td> <span class="sm-price">220-440 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">10100 </span><span class="sm-ed">руб</span> </td>
               </tr>
             </table>
             <div class="info__button-wrap"> <button class="info__button js-btn-popup">купить</button> </div>
@@ -211,7 +204,7 @@
       <div class="container">
         <h2 class="agronomist__heading">помощь <span>агронома</span></h2>
         <div class="agronomist__content">
-          <div class="agronomist__image-wrapper"> <img src="img/agronomist.jpg" alt="" class="agronomist__image"> </div>
+          <div class="agronomist__image-wrapper"> <img src="picture/agronomist.jpg" alt="" class="agronomist__image"> </div>
           <div class="agronomist__wrapper">
             <div class="agronomist__sub-title">подзаголовок</div>
             <p class="agronomist__text">NAM QUAM NUNC, BLANDIT VEL, LUCTUS PULVINAR, HENDRERIT ID, LOREM. MAECENAS NEC ODIO ET ANTE TINCIDUNT TEMPUS. DONEC VITAE SAPIEN UT LIBERO VENENATIS FAUCIBUS. NULLAM QUIS ANTE. ETIAM SIT AMET ORCI EGET EROS FAUCIBUS TINCIDUNT.</p>
@@ -231,15 +224,15 @@
           <div class="product__sale-caption">на деревья в <br>питомнике</div>
         </div>
         <div class="product__list">
-          <div class="product__image"> <img src="img/product-1.jpg" alt="сосна обыкновенная (EXTRA)">
+          <div class="product__image"> <img src="picture/product-1.jpg" alt="сосна обыкновенная (EXTRA)">
             <div class="product__sale-image"> <span>50%</span> </div>
             <div class="product__quality"><img src="img/quality.png" alt=""></div>
           </div>
           <div class="product__stock product-stock">
             <div class="product-stock__title"><span>акция</span></div>
             <div class="product-stock__content">
-              <p class="product-stock__text">только на деревья 2-3м<s class="product-stock__old-price">10 000 р</s></p>
-              <p class="product-stock__new-price">5000</p> <button class="product-stock__button js-btn-popup">купить со скидкой</button>
+              <p class="product-stock__text"><span class="hide">только </span>на деревья 2-3м<s class="product-stock__old-price">10 000 р</s></p>
+              <p class="product-stock__new-price">5000</p> <button class="product-stock__button js-btn-popup">купить<span class="hide"> со скидкой</span></button>
               <p class="product-stock__text product-stock__text_bg">до 17.03.2017</p>
             </div>
           </div>
@@ -255,12 +248,12 @@
             <div class="remainder__image"> <img src="/img/payment.png" alt=""> </div>
           </div>
           <div class="product__caption caption">
-            <p class="caption__text">Дерево высотой 25—40 м и диаметром ствола 0,5—1,2 м</p>
+            <p class="caption__text">Дерево высотой 2-3 м и диаметром кроны </p>
             <p class="caption__text caption__text_bold">рекомендовано для посадки в июле</p>
           </div>
         </div>
         <div class="product__caption caption caption_bottom">
-          <p class="caption__text">Дерево высотой 25—40 м и диаметром ствола 0,5—1,2 м</p>
+          <p class="caption__text">Дерево высотой 2—3 м и диаметром кроны</p>
           <p class="caption__text caption__text_bold">рекомендовано для посадки в июле</p>
         </div>
         <div class="product__info info">
@@ -269,11 +262,11 @@
             <table class="info__table info-table transp">
               <tr class="info-table__row info-table__row_first">
                 <td class="info-table__head">Высота</td>
-                <td>120-140 см</td>
-                <td>140-160 см</td>
-                <td>160-180 см</td>
-                <td>180-200 см</td>
-                <td>220-440 см</td>
+                <td>1 -1,4 м</td>
+                <td>1 - 1,6 м</td>
+                <td>1 - 1,8 м</td>
+                <td>1 - 2,0 м</td>
+                <td>2 - 4,4 м</td>
               </tr>
               <tr class="info-table__row info-table__row_grow">
                 <td class="info-table__head">Цена</td>
@@ -286,28 +279,28 @@
             </table>
             <table class="info__tablle-small">
               <tr>
-                <td> ВЫСОТА </td>
-                <td class="info__tablle-small_price"> ЦЕНА </td>
+                <td> высота </td>
+                <td class="info__tablle-small_price"> цена </td>
               </tr>
               <tr>
-                <td> 120-140 см </td>
-                <td class="info__tablle-small_price"> 1000 руб </td>
+                <td> <span class="sm-price">120-140 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">1000</span><span class="sm-ed">руб</span> </td>
               </tr>
               <tr>
-                <td> 140-160 см </td>
-                <td class="info__tablle-small_price"> 2000 руб </td>
+                <td> <span class="sm-price">140-160 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">2000 </span><span class="sm-ed">руб</span> </td>
               </tr>
               <tr>
-                <td> 160-180 см </td>
-                <td class="info__tablle-small_price"> 3500 рую </td>
+                <td> <span class="sm-price">160-180 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">3500 </span><span class="sm-ed">руб</span> </td>
               </tr>
               <tr>
-                <td> 180-200 см </td>
-                <td class="info__tablle-small_price"> 5990 руб </td>
+                <td> <span class="sm-price">180-200 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">5990 </span><span class="sm-ed">руб</span> </td>
               </tr>
               <tr>
-                <td> 220-440 см </td>
-                <td class="info__tablle-small_price"> 10100 руб </td>
+                <td> <span class="sm-price">220-440 </span><span class="sm-ed">см</span> </td>
+                <td class="info__tablle-small_price"> <span class="sm-price">10100 </span><span class="sm-ed">руб</span> </td>
               </tr>
             </table>
             <div class="info__button-wrap"> <button class="info__button js-btn-popup">купить</button> </div>
@@ -321,7 +314,7 @@
       <div class="container">
         <div class="agronomist__heading agronomist__heading_design">помощь <span>дизайнера</span></div>
         <div class="agronomist__content agronomist__content_design">
-          <div class="agronomist__image-wrapper agronomist__image-wrapper_design"> <img src="img/design.png" alt="" class="agronomist__image agronomist__image_design"> </div>
+          <div class="agronomist__image-wrapper agronomist__image-wrapper_design"> <img src="picture/design.png" alt="" class="agronomist__image agronomist__image_design"> </div>
           <div class="agronomist__wrapper agronomist__wrapper_design">
             <div class="agronomist__sub-title">подзаголовок</div>
             <p class="agronomist__text">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
@@ -341,17 +334,17 @@
             <div class="small-woods__payment"><img src="img/payment.png" alt=""></div>
             <div class="small-woods__image">
               <p class="small-woods__text">сосна черная штамб</p>
-              <div class="small-woods__wrap"> <img src="img/small-woods-1.jpg" alt=""> </div>
+              <div class="small-woods__wrap"> <img src="picture/small-woods-1.jpg" alt=""> </div>
               <div class="small-woods__sale">50%</div>
             </div>
             <div class="stock-sw__title">акция</div>
-            <div class="stock-sw__only">только на деревья</div>
+            <div class="stock-sw__only"><span class="hide">только</span> на деревья</div>
             <div class="stock-sw__old-price"><s>10 000</s></div>
             <div class="stock-sw__price">5000</div>
-            <div class="stock-sw__sale"><span class="hide">скидка</span> действует до 13.03.2017</div> <button class="stock-sw__button js-btn-popup">купить <span class="hide">сейчас</span></button>
+            <div class="stock-sw__sale"><span class="hide">скидка действует </span>до 13.03.2017</div> <button class="stock-sw__button js-btn-popup">купить <span class="hide">сейчас</span></button>
             <div class="small-woods__image small-woods__image_bottom">
               <p class="small-woods__text">ель голубая штамб</p>
-              <div class="small-woods__wrap"> <img src="img/small-woods-2.jpg" alt=""> </div>
+              <div class="small-woods__wrap"> <img src="picture/small-woods-2.jpg" alt=""> </div>
               <div class="small-woods__sale">50%</div>
             </div>
             <div class="small-woods__loz">скидка на все сосны <br> в питомнике</div>
@@ -365,12 +358,12 @@
       <div class="container">
         <div class="goods__title">голубая <span>ель</span></div>
         <div class="goods__images">
-          <div class="goods__image goods__image-wrap goods__image_big"> <a class="fancybox" href="images/image_big.jpg"><img src="img/goods-big-1.jpg" alt=""></a>
+          <div class="goods__image goods__image_active goods__image-wrap goods__image_big"> <img src="picture/goods-big-1.jpg" alt="">
             <div class="goods__sale">-20%</div>
           </div>
           <div class="goods__image-wrap goods__image-wrap_small">
-            <div class="goods__image goods__image_small"> <img src="img/goods-small-1-1.jpg" alt=""> </div>
-            <div class="goods__image goods__image_small"> <img src="img/goods-small-1-2.jpg" alt=""> </div>
+            <div class="goods__image goods__image_small"> <img src="picture/goods-small-1-1.jpg" alt=""> </div>
+            <div class="goods__image goods__image_small"> <img src="picture/goods-small-1-2.jpg" alt=""> </div>
           </div>
         </div>
         <div class="goods__description">
@@ -389,7 +382,7 @@
               <td class="active">4-5м</td>
               <td>2-3м</td>
             </tr>
-          </table> <button class="goods__button js-btn-popup">купить по акции</button> </div>
+          </table> <button class="goods__button js-btn-popup">купить<span class="hide"> по акции</span></button> </div>
       </div>
     </section>
     <!-- end goods -->
@@ -415,12 +408,12 @@
       <div class="container">
         <div class="goods__title">голубая <span>ель</span></div>
         <div class="goods__images">
-          <div class="goods__image goods__image-wrap goods__image_big"> <a class="fancybox" href="images/image_big.jpg"><img src="img/goods-big-1.jpg" alt=""></a>
+          <div class="goods__image goods__image_active goods__image-wrap goods__image_big"> <img src="picture/goods-big-1.jpg" alt="">
             <div class="goods__sale">-20%</div>
           </div>
           <div class="goods__image-wrap goods__image-wrap_small">
-            <div class="goods__image goods__image_small"> <img src="img/goods-small-1-1.jpg" alt=""> </div>
-            <div class="goods__image goods__image_small"> <img src="img/goods-small-1-2.jpg" alt=""> </div>
+            <div class="goods__image goods__image_small"> <img src="picture/goods-small-1-1.jpg" alt=""> </div>
+            <div class="goods__image goods__image_small"> <img src="picture/goods-small-1-2.jpg" alt=""> </div>
           </div>
         </div>
         <div class="goods__description">
@@ -439,7 +432,7 @@
               <td class="active">4-5м</td>
               <td>2-3м</td>
             </tr>
-          </table> <button class="goods__button js-btn-popup">купить по акции</button> </div>
+          </table> <button class="goods__button js-btn-popup">купить<span class="hide"> по акции</span></button> </div>
       </div>
     </section>
     <!-- end goods -->
@@ -451,17 +444,17 @@
             <div class="small-woods__payment"><img src="img/payment.png" alt=""></div>
             <div class="small-woods__image">
               <p class="small-woods__text">сосна черная штамб</p>
-              <div class="small-woods__wrap"> <img src="img/small-woods-1.jpg" alt=""> </div>
+              <div class="small-woods__wrap"> <img src="picture/small-woods-1.jpg" alt=""> </div>
               <div class="small-woods__sale">50%</div>
             </div>
             <div class="stock-sw__title">акция</div>
-            <div class="stock-sw__only">только на деревья</div>
+            <div class="stock-sw__only"><span class="hide">только</span> на деревья</div>
             <div class="stock-sw__old-price"><s>10 000</s></div>
             <div class="stock-sw__price">5000</div>
-            <div class="stock-sw__sale"><span class="hide">скидка</span> действует до 13.03.2017</div> <button class="stock-sw__button js-btn-popup">купить <span class="hide">сейчас</span></button>
+            <div class="stock-sw__sale"><span class="hide">скидка действует </span>до 13.03.2017</div> <button class="stock-sw__button js-btn-popup">купить <span class="hide">сейчас</span></button>
             <div class="small-woods__image small-woods__image_bottom">
               <p class="small-woods__text">ель голубая штамб</p>
-              <div class="small-woods__wrap"> <img src="img/small-woods-2.jpg" alt=""> </div>
+              <div class="small-woods__wrap"> <img src="picture/small-woods-2.jpg" alt=""> </div>
               <div class="small-woods__sale">50%</div>
             </div>
             <div class="small-woods__loz">скидка на все сосны <br> в питомнике</div>
@@ -480,42 +473,42 @@
           <div class="exclusive__slides js-hero-exclusive">
             <div class="exclusive__slide">
               <div class="exclusive__slide-wrapper">
-                <div class="exclusive__image"><img src="img/exclusive-1.jpg" alt=""></div>
+                <div class="exclusive__image"><img src="picture/exclusive-1.jpg" alt=""></div>
                 <div class="exclusive__name">сосна крымская (черная)</div>
                 <div class="exclusive__price">цена от <span>9000</span> р</div>
               </div>
             </div>
             <div class="exclusive__slide">
               <div class="exclusive__slide-wrapper">
-                <div class="exclusive__image"><img src="img/exclusive-2.jpg" alt=""></div>
+                <div class="exclusive__image"><img src="picture/exclusive-2.jpg" alt=""></div>
                 <div class="exclusive__name">пихта одноцветная</div>
                 <div class="exclusive__price">цена от <span>24 000</span> р</div>
               </div>
             </div>
             <div class="exclusive__slide">
               <div class="exclusive__slide-wrapper">
-                <div class="exclusive__image"><img src="img/exclusive-3.jpg" alt=""></div>
+                <div class="exclusive__image"><img src="picture/exclusive-3.jpg" alt=""></div>
                 <div class="exclusive__name">ель сербская</div>
                 <div class="exclusive__price">цена от <span>11 950</span> р</div>
               </div>
             </div>
             <div class="exclusive__slide">
               <div class="exclusive__slide-wrapper">
-                <div class="exclusive__image"><img src="img/exclusive-1.jpg" alt=""></div>
+                <div class="exclusive__image"><img src="picture/exclusive-1.jpg" alt=""></div>
                 <div class="exclusive__name">сосна крымская (черная)</div>
                 <div class="exclusive__price">цена от <span>9000</span> р</div>
               </div>
             </div>
             <div class="exclusive__slide">
               <div class="exclusive__slide-wrapper">
-                <div class="exclusive__image"><img src="img/exclusive-2.jpg" alt=""></div>
+                <div class="exclusive__image"><img src="picture/exclusive-2.jpg" alt=""></div>
                 <div class="exclusive__name">пихта одноцветная</div>
                 <div class="exclusive__price">цена от <span>24 000</span> р</div>
               </div>
             </div>
             <div class="exclusive__slide">
               <div class="exclusive__slide-wrapper">
-                <div class="exclusive__image"><img src="img/exclusive-3.jpg" alt=""></div>
+                <div class="exclusive__image"><img src="picture/exclusive-3.jpg" alt=""></div>
                 <div class="exclusive__name">ель сербская</div>
                 <div class="exclusive__price">цена от <span>11 950</span> р</div>
               </div>
@@ -545,7 +538,7 @@
         </div>
         <ul class="elite__list slider-elite">
           <li class="elite__item">
-            <div class="elite__image"><img src="img/elite-spruce.jpg" alt=""></div>
+            <div class="elite__image"><img src="picture/elite-3.png" alt=""></div>
             <div class="elite__caption">
               <div class="elite__title">кедр сибирский</div>
               <p class="elite__text">Украшают сады <br>и участки возле дома</p>
@@ -553,7 +546,7 @@
             <p class="elite__price">от <span class="elite__size-price">652 000</span> руб</p>
           </li>
           <li class="elite__item">
-            <div class="elite__image"><img src="img/elite-spruce.jpg" alt=""></div>
+            <div class="elite__image"><img src="picture/elite-1.png" alt=""></div>
             <div class="elite__caption">
               <div class="elite__title">кедр сибирский</div>
               <p class="elite__text">Украшают сады <br>и участки возле дома</p>
@@ -561,7 +554,7 @@
             <p class="elite__price">от <span class="elite__size-price">652 000</span> руб</p>
           </li>
           <li class="elite__item">
-            <div class="elite__image"><img src="img/elite-spruce.jpg" alt=""></div>
+            <div class="elite__image"><img src="picture/elite-3.png" alt=""></div>
             <div class="elite__caption">
               <div class="elite__title">ель голубая</div>
               <p class="elite__text">Украшают сады <br>и участки возле дома</p>
@@ -569,7 +562,7 @@
             <p class="elite__price">от <span class="elite__size-price">652 000</span> руб</p>
           </li>
           <li class="elite__item">
-            <div class="elite__image"><img src="img/elite-fir.jpg" alt=""></div>
+            <div class="elite__image"><img src="picture/elite-2.png" alt=""></div>
             <div class="elite__caption">
               <div class="elite__title">пихта</div>
               <p class="elite__text">Украшают сады <br>и участки возле дома</p>
@@ -587,19 +580,19 @@
         <div class="works__subtitle">посмотрите как может выглядеть ваш сад</div>
         <ul class="works__list">
           <li class="works__item ">
-            <div class="works__image "><img src="img/works-1.jpg" alt=""></div>
+            <div class="works__image "><img src="picture/works-1.jpg" alt=""></div>
             <div class="works__caption"> <span class="works__place">Поселок Жулебино</span> <span class="works__area">площадь 70 кв. м.</span> </div>
           </li>
           <li class="works__item">
-            <div class="works__image"><img src="img/works-2.jpg" alt=""></div>
+            <div class="works__image"><img src="picture/works-2.jpg" alt=""></div>
             <div class="works__caption"> <span class="works__place">Поселок Рублево-1</span> <span class="works__area">площадь 25 кв. м.</span> </div>
           </li>
           <li class="works__item">
-            <div class="works__image"><img src="img/works-3.jpg" alt=""></div>
+            <div class="works__image"><img src="picture/works-3.jpg" alt=""></div>
             <div class="works__caption"> <span class="works__place">Поселок Горки-6</span> <span class="works__area">площадь 43 кв. м.</span> </div>
           </li>
           <li class="works__item">
-            <div class="works__image"><img src="img/works-4.jpg" alt=""></div>
+            <div class="works__image"><img src="picture/works-4.jpg" alt=""></div>
             <div class="works__caption"> <span class="works__place">Поселок Кембридж</span> <span class="works__area">площадь 18 кв. м.</span> </div>
           </li>
         </ul> <button class="works__button js-btn-popup">получить консультацию</button> </div>
@@ -611,34 +604,31 @@
         <div class="nursery__title">наш питомник</div>
         <div class="grid">
           <div class="big-images">
-            <div class="grid-item"> <img src="img/pitomnik-big-1.jpg" alt="">
+            <div class="grid-item"> <img src="picture/pitomnik-big-1.jpg" alt="">
               <div class="nursery__caption"><span>плодовые деревья</span></div>
             </div>
-            <div class="grid-item"> <img src="img/pitomnik-big-2.jpg" alt="">
+            <div class="grid-item"> <img src="picture/pitomnik-big-2.jpg" alt="">
               <div class="nursery__caption"><span>хвойные деревья</span></div>
             </div>
-            <div class="grid-item"> <img src="img/pitomnik-big-3.jpg" alt="">
+            <div class="grid-item"> <img src="picture/pitomnik-big-3.jpg" alt="">
               <div class="nursery__caption"><span>кустарники</span></div>
             </div>
-            <div class="grid-item"> <img src="img/pitomnik-big-4.jpg" alt="">
+            <div class="grid-item"> <img src="picture/pitomnik-big-4.jpg" alt="">
               <div class="nursery__caption"><span>лиственные деревья</span></div>
             </div>
           </div>
           <div class="small-images-video">
             <div class="small-images">
               <div class="small-images-row">
-                <div class="small-image"> <img src="img/pitomnik-small-1.jpg" alt=""> </div>
-                <div class="small-image"> <img src="img/pitomnik-small-2.jpg" alt=""> </div>
+                <div class="small-image"> <img src="picture/pitomnik-small-1.jpg" alt=""> </div>
+                <div class="small-image"> <img src="picture/pitomnik-small-2.jpg" alt=""> </div>
               </div>
               <div class="small-images-row">
-                <div class="small-image"> <img src="img/pitomnik-small-3.jpg" alt=""> </div>
-                <div class="small-image"> <img src="img/pitomnik-small-4.jpg" alt=""> </div>
+                <div class="small-image"> <img src="picture/pitomnik-small-3.jpg" alt=""> </div>
+                <div class="small-image"> <img src="picture/pitomnik-small-4.jpg" alt=""> </div>
               </div>
             </div>
-            <div class="video"> <span class="js-btn-popup-video">
-                        <img src="img/video.png" alt="">
-                        <span class="play"></span> </span>
-            </div>
+            <div class="video js-btn-popup-video"> <img src="picture/video.png" alt=""> <span class="play"></span> </div>
           </div>
         </div>
       </div>
@@ -649,7 +639,7 @@
       <div class="clients__heading">наши клиенты</div>
       <div class="clients__list">
         <div class="clients__item">
-          <div class="clients__image"><img class="animated" src="img/client-1.jpg" alt=""></div>
+          <div class="clients__image"><img class="animated" src="picture/client-1.jpg" alt=""></div>
           <div class="clients__caption">
             <div class="clients__name">николай <br>николаевич <br>николаев</div>
             <div class="clients__do">посадил елку и очень доволен</div>
@@ -659,7 +649,7 @@
           </div>
         </div>
         <div class="clients__item">
-          <div class="clients__image clients__image_r"><img class="animated" src="img/client-2.jpg" alt=""></div>
+          <div class="clients__image clients__image_r"><img class="animated" src="picture/client-2.jpg" alt=""></div>
           <div class="clients__caption clients__caption_r">
             <div class="clients__name">просто <br>иван <br>иваныч</div>
             <div class="clients__do">купил мегу сосну рад нереально</div>
@@ -669,7 +659,7 @@
           </div>
         </div>
         <div class="clients__item">
-          <div class="clients__image"><img src="img/client-1.jpg" alt=""></div>
+          <div class="clients__image"><img src="picture/client-1.jpg" alt=""></div>
           <div class="clients__caption">
             <div class="clients__name">николай <br>николаевич <br>николаев</div>
             <div class="clients__do">посадил елку и очень доволен</div>
@@ -687,28 +677,28 @@
         <div class="comands__title">наша команда</div>
         <ul class="comands__list">
           <li class="comands__item">
-            <div class="comands__image"><img src="img/comands-1.jpg" alt=""></div>
+            <div class="comands__image"><img src="picture/comands-1.jpg" alt=""></div>
             <div class="comands__caption">
               <div class="comands__name">вася пупкин</div>
               <div class="comands__position">директор</div>
             </div>
           </li>
           <li class="comands__item">
-            <div class="comands__image"><img src="img/comands-2.jpg" alt=""></div>
+            <div class="comands__image"><img src="picture/comands-2.jpg" alt=""></div>
             <div class="comands__caption">
               <div class="comands__name">петя петин</div>
               <div class="comands__position">главный зам</div>
             </div>
           </li>
           <li class="comands__item">
-            <div class="comands__image"><img src="img/comands-3.jpg" alt=""></div>
+            <div class="comands__image"><img src="picture/comands-3.jpg" alt=""></div>
             <div class="comands__caption">
               <div class="comands__name">иван иваныч</div>
               <div class="comands__position">дизайнер</div>
             </div>
           </li>
           <li class="comands__item">
-            <div class="comands__image"><img src="img/comands-4.jpg" alt=""></div>
+            <div class="comands__image"><img src="picture/comands-4.jpg" alt=""></div>
             <div class="comands__caption">
               <div class="comands__name">сильвестор</div>
               <div class="comands__position">аля кобра</div>
@@ -770,17 +760,14 @@
             </ul>
           </div>
           <div class="footer__bottom">
-            <div class="footer__contacts">
-              <div class="footer__phone">+7 (495) 998-43-19</div>
-              <p class="footer__email">vamsadik@mail.ru</p>
-            </div>
+            <div class="footer__contacts"> <a href="tel:+74959984319" class="footer__phone">+7 (495) 998-43-19</a> <a href="mailto:vamsadik@mail.ru" class="footer__email">vamsadik@mail.ru</a> </div>
             <p class="footer__bottom-title">НИЗКИЕ ЦЕНЫ НА ТУИ ДОСТАВКА В ОБЛАСТЬ И ПО РФ ОПТ, РОЗНИЦА</p>
             <div class="footer__bottom-wrap">
               <div class="footer__bottom-vygoda">
                 <p>ВЫГОДНАЯ ПОКУПКА <br>ТУИ ЗАПАДНОЙ</p>
               </div>
               <div class="footer__bottom-hotite">
-                <p>хотите тую за 500 руб</p> <button class="js-btn-popup">хочу</button> </div>
+                <p>хотите тую за <b>500</b> руб</p> <button class="js-btn-popup">хочу</button> </div>
             </div>
           </div>
         </div>
@@ -800,8 +787,7 @@
     <!-- end copyright -->
     <!-- END content -->
     <!-- BEGIN scripts -->
-    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
   </body>

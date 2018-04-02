@@ -36,9 +36,11 @@
 			margin-right: 40px
 		&::last-child
 			margin-right: 0
-		+r(510)
+		+r(820)
 			display: none
 	&__list
+		+r(820)
+			display: none
 		li
 		a
 			color: #dcdcdc
@@ -62,6 +64,7 @@
 		font-family: Akrobatbold
 		margin-bottom: 5px
 		float: left
+		text-decoration: none
 		+r(510)
 			display: inline-block
 			margin-right: 20px
@@ -76,13 +79,26 @@
 		display: inline-block
 		margin-bottom: 5px
 		font-family: Akrobatbold
+		color: #dcdcdc
 		float: right
+		text-decoration: none
 		+r(510)
 			display: inline-block
+	&__bottom
+		position: relative
+		+r(820)
+			width: 100%
 	&__bottom-wrap
 		display: flex
 		-webkit-justify-content: space-between
 		justify-content: space-between
+		+r(500)
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			-webkit-align-items: center
+			align-items: center
+
 	&__bottom-title
 		font-family: Akrobatbold
 		font-size: 20px
@@ -97,6 +113,12 @@
 		text-transform: uppercase
 		font-family: Akrobat
 		text-align: center
+		+r(500)
+			width: 100%
+			order: 2
+		br
+			+r(500)
+				display: none
 	&__bottom-hotite
 		width: 50%
 		color: #dcdcdc
@@ -106,6 +128,9 @@
 		margin-bottom: 5px
 		text-align: center
 		text-transform: uppercase
+		+r(500)
+			margin-bottom: 10px
+			width: 100%
 		button
 			margin-top: 15px
 			font-size: 16px
@@ -115,16 +140,20 @@
 			text-transform: uppercase
 			border: 1px solid #6ac0f3
 			color: #dcdcdc
+			+r(500)
+				margin-top: 5px
 .copyright
 	background-color: #525252
 	color: #dcdcdc
 	font-size: 14px
 	padding: 10px 0
+	text-align: left
+	position: relative
 	+clr
-	+r(540)
-		font-size: 12px
-	+r(470)
+	+r(500)
 		font-size: 10px
+	+r(424)
+		font-size: 8px
 	&__inn
 		float: left
 		width: 50%
@@ -132,16 +161,25 @@
 		+r(710)
 			width: auto
 			margin-right: 10px
+		+r(400)
+			margin-right: 0
 	&__firma
 		padding-top: 15px
 		float: left
 		margin-bottom: 10px
 		margin-right: 10px
+		+r(510)
+			margin-left: 5px
+			margin-right: 0px
+		
 	&__text
 		clear: both
 		font-size: 14px
 		text-align: center
 		padding-bottom: 20px
+		text-align: justify
+		+r(500)
+			font-size: 10px
 	&__counter
 		float: right
 .counter
@@ -149,6 +187,12 @@
 	display: inline-block
 	padding: 3px 3px 3px 50px
 	position: relative
+	+r(500)
+		transform: scale(.7, .6)
+		top: 5px
+	+r(330)
+		transform: scale(.5, .4)
+		right: -20px
 	svg
 		position: absolute
 		left: 3px

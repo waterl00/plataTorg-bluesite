@@ -11,27 +11,22 @@
     <meta name="theme-color" content="#fff" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <!--link href="/img/ico.png" type="image/png" rel="apple-touch-icon"-->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
-    <!--<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">-->
     <link rel="stylesheet" media="all" href="css/app.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
-    </script>
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
-  <body style="zoom: 1">
+  <body>
 
     <!-- BEGIN content -->
       {% block content %}{% endblock %}
     <!-- END content -->
 
     <!-- BEGIN scripts -->
-    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
 

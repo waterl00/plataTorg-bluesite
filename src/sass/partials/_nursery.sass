@@ -3,6 +3,8 @@
 	font-size: 0
 	+r(530)
 		padding: 40px 0
+	+r(330)
+		padding: 10px 0
 	.container
 		max-width: 1024px
 	&__title
@@ -25,8 +27,11 @@
 		right: 10px
 		top: 10px
 		bottom: 10px
-		+r(768)
-			display: none
+		+r(500)
+			left: 5px
+			right: 5px
+			top: 5px
+			bottom: 5px
 		span
 			position: absolute
 			bottom: -2px
@@ -49,8 +54,9 @@
 				line-height: 40px
 			+r(768)
 				font-size: 12px
-			+r(633)
+			+r(500)
 				display: none
+
 			&:after
 				position: absolute
 				display: block
@@ -62,8 +68,6 @@
 				bottom: 20px
 				left: 50%
 				margin-left: -40%
-				+r(960)
-					display: none
 .grid
 	font-size: 0
 .big-images
@@ -74,6 +78,9 @@
 		width: 25%
 		margin-bottom: 20px
 		position: relative
+		overflow: hidden
+		&:hover img
+			transform: scale(1.1)
 		+r(960)
 			margin-bottom: 15px
 		+r(650)
@@ -94,6 +101,7 @@
 	display: flex
 	-webkit-justify-content: space-between
 	justify-content: space-between
+	-webkit-align-items: stretch
 	align-items: stretch
 	.small-images, .video
 		width: 50%
@@ -102,22 +110,39 @@
 	.video
 		position: relative
 		cursor: pointer
-		span
-			display: block
+		overflow: hidden
+		&:before
+			content: ''
+			display: none
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			background-color: rgba(0,0,0,.4)
+		&:hover
+			&:before
+				display: block
+		img
+			position: absolute
+			top: 0
+			left: 0
 			height: 100%
-			img
-				height: 100%
 		.play
 			position: absolute
 			display: block
 			width: 64px
 			height: 64px
-			border: 3px solid #61adec
+			border: 3px solid #3eb5f1
 			border-radius: 50%
 			background-color: #232323
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
+			+r(425)
+				width: 32px
+				height: 32px
+				border: 1px solid #3eb5f1
 			&:after
 				display: block
 				content: ''
@@ -125,12 +150,15 @@
 				height: 0
 				border-style: solid
 				border-width: 14px 0 14px 28px
-				border-color: transparent transparent transparent #61aeec
+				border-color: transparent transparent transparent #3eb5f1
 				position: absolute
 				top: 50%
 				left: 50%
 				transform: translate(-50%, -50%)
 				margin-left: 5px
+				+r(425)
+					border-width: 7px 0 7px 14px
+					margin-left: 2px
 
 	.small-images
 		margin-right: 20px
@@ -158,6 +186,10 @@
 				margin-left: 10px
 			+r(400)
 				margin-left: 5px
+		.small-image
+			overflow: hidden
+			img:hover
+				transform: scale(1.1)
 		.small-images-row + .small-images-row
 			margin-top: 20px
 			+r(960)
