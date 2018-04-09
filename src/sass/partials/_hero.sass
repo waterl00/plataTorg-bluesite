@@ -83,14 +83,19 @@
 		width: 70px
 .hamburger
 	display: none
-	z-index: 20 
+	z-index: 50 
 	+r(820)
 		display: block
 		position: fixed
-		right: 10px
-		bottom: 4px
+		left: 0px
+		top: 3px
 	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
-		background-color: #ccc 
+		background-color: #eee
+.hamburger.is-active
+	transform: translate(-25px, 0)
+	left: 50%
+	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+		background-color: #fff
 .contacts
 	text-align: center
 	+r(850)
@@ -138,17 +143,20 @@
 			+r(850)
 				float: right
 			+r(820)
-				text-transform: uppercase
-				display: none
+				text-transform: lowercase
+				font-size: 20px
+				padding: 0 5px
 				float: none
 				font-size: 20px
 				font-family: Akrobatbold
 				margin-bottom: 5px
+				background-color: #F5B500
+				color: #000
 	&__button
 		display: none
 		+r(820)
 			font-size: 20px
-			display: block
+			display: none
 			width: 100%
 			background-color: #F5B500
 			padding: 5px 10px

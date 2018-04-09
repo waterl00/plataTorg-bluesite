@@ -1,184 +1,149 @@
 .small-woods
-	font-size: 0
-	padding: 0
-	zoom: 0.8
-	+r(700)
-		padding-top: 60px
+	padding: 40px 0
+	+r(810)
+		padding: 0
+	+r(320)
+		padding: 0
 	.container
-		margin-bottom: -80px
-	&__wrap
+	&__item
+		display: flex
+		margin: -80px 0 -110px 0
+		-webkit-justify-content: center
+		justify-content: center
 		position: relative
 		+clr
+		+r(900)
+			transform: scale(.9)
+		+r(810)
+			transform: scale(.8)
+		+r(710)
+			transform: scale(.7)
+			margin: -130px 0 -170px
+		+r(615)
+			transform: scale(.6)
+			margin: -150px 0 -190px
+		+r(460)
+			transform: scale(.45)
+			margin: -220px 0 -230px
+		+r(375)
+			transform: scale(.4)
+			margin: -220px 0 -230px
+		+r(320)
+			transform: scale(.35)
+			margin: -250px 0 -270px
 		&:after
 			display: block
 			content: ''
 			position: absolute
-			border: 1px solid #fff
-			left: 20px
-			right: 20px
-			top: 20px
-			bottom: 20px
-			+r(700)
-				left: 10px
-				right: 10px
-				top: 10px
-				bottom: 16px
+			+s(fir-tree)
+			transform: scale(1.4)
+			border-bottom: 4px solid #65d499
+			border-radius: 10px
+			bottom: 80px
+			left: 10%
+			+r(810)
+				left: 0
+			+r(520)
+				left: -40px
+			+r(460)
+				left: -160px
+	&__text
+		position: absolute
+		font-size: 27px
+		padding-left: 55px
+		color: #000000;
+		font-family: Akrobat;
+		font-weight: 400;
+		text-transform: uppercase;
+		top: -35px
+	&__wrap
+		position: relative
+		overflow: hidden
+		font-size: 0
 		img
 			width: 100%
-			height: 100%				
-			overflow: hidden
-				
-	+r(1400)
-		zoom: 0.7
-	+r(930)
-		zoom: 0.5
-	+r(700)
-		zoom: 1
-	.container
-		position: relative
-	&__item
-		text-align: center
-		top: 200px
-		+clr
-		position: relative
-		left: -51px
-		+r(700)
-			padding: 0
-			position: relative
-			left: auto
-			+clr
-			margin-bottom: 240px
-	&__loz
-		display: none
-		+r(700)
-			display: block
+			height: 100%
+		&:hover img
+			transform: scale(1.1)
+		&:after
 			position: absolute
-			right: 0
-			top: 30px
-			color: #d24a43;
-			font-family: KobzarKS
-			font-size: 22px;
-			font-weight: 400;
-			letter-spacing: 1.32px
-			transform: rotate(-30deg)
-		+r(400)
-			font-size: 18px
-			top: 20px
-	&__image
-		max-width: 443px
-		position: relative
-		float: left
-		padding-left: 50px
-		color: #000000
-		font-family: Akrobat
-		font-size: 34px
-		text-transform: uppercase
-		z-index: 2
-		top: -105px
-		left: 50px
-		+r(700)
-			padding: 0
-			position: relative
-			top: auto
-			left: auto
-			bottom: auto
-			right: auto
-			width: 55%
-			margin: 0
-			margin-bottom: 40px
-		&_bottom
-			float: right
-			left: 0
-			top: auto
-			bottom: 300px
-			+r(700)
-				position: relative
-				top: auto
-				left: auto
-				bottom: auto
-				right: auto
-				float: left
-				margin: 0
-
+			display: block
+			content: ''
+			left: 10px
+			right: 10px
+			top: 10px
+			bottom: 10px
+			border: 1px solid rgba(255,255,255, 0.4)
+			background: transparent url('../img/watermark.png') 0 50px no-repeat 
 		img
-			
-			position: relative
-			box-shadow: 0 7px 9px rgba(0, 0, 0, 0.25);
+			width: 100%
+			height: 100%
+	&__image
+		width: 100%
+		position: absolute
+		left: -100%
+		bottom: 50%
+		transform: translate(30px, 0)
+		&_bottom
+			left: auto
+			right: -100%
+			bottom: auto
+			top: 50%
+			transform: translate(-30px, 0)
+			& .small-woods__sale
+				left: auto
+				right: -20px
+				top: auto
+				bottom: -50px
+		
 	&__sale
 		position: absolute
-		width: 101px
-		height: 101px
-		border: 2px solid #7b7b7b
-		background-color: rgba(255,255,255,.5)
+		width: 70px;
+		height: 70px;
+		border: 2px solid #7b7b7b;
+		background-color: rgba(255,255,255, .7)
+		color: #d24a43;
+		font-family: Akrobatbold;
+		font-size: 37px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2.28px;
+		top: -50px
+		left: -20px
+		line-height: 66px
 		text-align: center
-		display: block
-		content: ''
-		color: #d24a43
-		font-family: Akrobatbold
-		/*semi*/
-		font-size: 48px
-		font-weight: bold
-		text-transform: uppercase
-		// Text style for "-50%"
-		letter-spacing: 2.28px
-		line-height: 105px
-		top: -55px
-		left: -55px
-		+r(700)
-			width: 55px
-			height: 55px
-			font-size: 20px
-			line-height: 53px
-			left: auto
-			right: -28px
-			top: -28px	
-		+r(400)
-			width: 42px
-			height: 42px
-			font-size: 16px
-			line-height: 40px
-			right: -21px
-			top: -21px	 	
+			
+	&__stock
+		margin: 190px 0
+		position: relative
+		text-align: center
+		border: 1px solid #000000;
+		padding: 0 50px
+		width: 300px
+	&__loz
+		position: absolute
+		right: -250px
+		top: -100px
+		color: #d24a43;
+		font-size: 30px;
+		font-family: KobzarKS
+		font-weight: 400;
+		letter-spacing: 1.32px
+		transform: rotate(15deg)
+		text-align: center
+		width: 300px
 	&__payment
+		max-width: 270px
 		display: none
-		+r(700)
-			display: block
-			position: absolute
-			bottom: 80px
-			right: 8%
-		+r(460)
-			right: 10px
-			width: 130px
+		position: absolute
+		bottom: -40px
+		right: 50%
+		transform: translate(50%, 0)
 		img
 			width: 100%
-.small-woods__image_bottom .small-woods__sale
-	top: auto
-	left: auto
-	right: -21px
-	bottom: -21px
 .stock-sw
-	margin-top: 160px
+	padding: 20px 50px
 	background-color: #808080
-	padding: 36px 50px 54px
-	width: 379px
-	margin: 0 auto
-	position: relative
-	left: 50px
-	z-index: 1
-	border: 1px solid #000000;
-	+r(700)
-		padding: 20px 0
-		box-sizing:  border-box
-		position: static
-		width: 50%
-		height: 50%
-		margin: 0
-		float: right
-		position: absolute
-		left: 50%
-		top: 50%
-		transform: translate(0, -50%)
-	+r(460)
 	&__title
 		text-align: center
 		display: block
@@ -188,20 +153,13 @@
 		text-transform: uppercase;
 		/* Text style for "акция" */
 		letter-spacing: 2.38px;
-		+r(700)
-			font-size: 20px
-			margin-bottom: 5px
-			line-height: 1
 		&:after
 			display: block
 			content: ''
 			width: 190px
 			height: 2px
 			background-color: #3eb5f1
-			margin: 16px auto 20px
-			+r(700)
-				margin: 8px auto 8px
-				display: none
+			margin: 10px auto
 	&__only
 		color: #ffffff;
 		font-family: Akrobat;
@@ -212,10 +170,8 @@
 		letter-spacing: 1.2px;
 		/* Text style for "М" */
 		letter-spacing: 0.9px;
-		margin-bottom: 43px
-		+r(700)
-			font-size: 14px
-			margin-bottom: 5px
+		margin-bottom: 10px
+		br
 
 	&__old-price
 		color: #ffffff;
@@ -226,10 +182,7 @@
 		text-transform: uppercase;
 		/* Text style for "10 000" */
 		letter-spacing: 1.71px
-		margin-bottom: 20px
-		+r(700)
-			font-size: 14px
-			margin-bottom: 5px
+		margin-bottom: 5px
 	&__price
 		text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.15);
 		color: #fd7979;
@@ -239,10 +192,7 @@
 		text-transform: uppercase;
 		/* Text style for "5, 000" */
 		letter-spacing: 2.38px;
-		margin-bottom: 39px
-		+r(700)
-			font-size: 18px
-			margin-bottom: 5px
+		margin-bottom: 10px
 	&__sale
 		color: #ffffff;
 		font-family: Akrobat;
@@ -252,12 +202,8 @@
 		/* Text style for "С, КИДКА Д" */
 		letter-spacing: 0.86px;
 		margin-bottom: 40px
-		+r(700)
-			font-size: 14px
-			margin-bottom: 30px
-			padding: 0 20px
-		+r(460)
-			margin-bottom: 10px
+		text-align: center
+		.hide
 	&__button
 		background-color: transparent
 		border: 2px solid #ffd357
@@ -270,39 +216,5 @@
 		text-transform: uppercase;
 		/* Text style for "КУПИТЬ СЕЙ" */
 		letter-spacing: 1.17px;
-		+r(700)
-			font-size: 14px
-			padding: 10px 15px
-.small-woods__text
-	padding-left: 80px
-	+r(700)
-		padding-left: 0px
-		text-align: left
-		font-size: 20px
-		margin-bottom: 5px
-	+r(375)
-		font-size: 16px
-		margin-bottom: 2px
-		
-
-.small-woods__item_left
-	+r(700)
-		top: 100px
-		margin-bottom: 240px
-		.small-woods__image
-			float: right
-			&_bottom
-				float: right
-		.stock-sw
-			left: 0
-			right: auto
-		.small-woods__text
-			text-align: left
-		.small-woods__loz
-			left: 0
-			right: auto
-		.small-woods__sale
-.small-woods__sale
-	+r(700)
-
-		
+		.hide
+			

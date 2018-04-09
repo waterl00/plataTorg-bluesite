@@ -2825,6 +2825,9 @@ $('.js-btn-popup').click(function () {
 $('.js-btn-popup-video').click(function () {
   $('.popup-video').toggleClass('popup-video_active');
 });
+$('.js-copyright').click(function () {
+  $('.js-span ').toggleClass('js-span_active');
+});
 
 $(document).ready(function () {
   $('.go_to').click(function () {

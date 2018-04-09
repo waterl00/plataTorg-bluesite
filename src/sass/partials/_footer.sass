@@ -149,7 +149,26 @@
 	padding: 10px 0
 	text-align: left
 	position: relative
-	+clr
+	+clr		
+	button
+		display: none
+		+r(700)
+			margin: 0 auto
+			background-color: transparent
+			border-bottom: 1px dashed #dcdcdc
+			color: #dcdcdc
+			display: block
+			text-align: center
+	span
+		+r(700)
+			height: 0
+	.js-span
+		background-color: #525252
+		+r(700)
+			display: none
+	.js-span_active
+		+r(700)
+			display: inline
 	+r(500)
 		font-size: 10px
 	+r(424)
@@ -176,8 +195,6 @@
 		clear: both
 		font-size: 14px
 		text-align: center
-		padding-bottom: 20px
-		text-align: justify
 		+r(500)
 			font-size: 10px
 	&__counter
