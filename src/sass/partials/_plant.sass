@@ -1,0 +1,39 @@
+.plant
+	margin-bottom: 0px
+	+r(600) 
+	&__wrap
+		max-width: 960px
+		width: 100%
+		margin: 0 auto
+		padding: 10px 20px 20px 20px
+		font-size: 20px
+		text-align: center
+	&__title
+		display: inline-block
+		font-size: 29px
+		color: #3b3b3b;
+		font-family: roboto;
+		text-transform: uppercase
+		text-align: center
+		margin: 20px 0
+		padding: 0 10px
+		cursor: pointer
+		+r(768)
+			font-size: 13px
+			text-decoration: underline
+			text-decoration-style: dotted
+			margin: 5px 0
+		&_border
+			padding-bottom: 3px
+			border-bottom: 1px dashed #000
+			+r(768)
+				border: none
+	&__text
+		text-align: justify
+		display: none
+		+r(768)
+			font-size: 10px
+		&_active
+			display: block
+			padding-bottom: 2px
+			border: 1px solid dashed

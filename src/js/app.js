@@ -2,9 +2,15 @@
 //=include lib/jquery.min.js
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
+//=include lib/jquery.fancybox.min.js
+$('.plant__title').click(function() {
+    console.log('swdssd');
+    $(this).siblings('.plant__text').toggleClass('plant__text_active');
+});
+
 
 $('.js-hero').slick({
-  dots: true,
+  dots: false,
   nextArrow: '.slider__next',
   prevArrow: '.slider__prev',
   dotsClass: 'dots',
@@ -12,7 +18,7 @@ $('.js-hero').slick({
   adaptiveHeight: true,
   responsive: [{
     dotsClass: 'dots',
-    dots: true,
+    dots: false,
     slidesToShow: 1,
     adaptiveHeight: true,
     arrows: false,
@@ -101,13 +107,21 @@ $('.js-copyright').click(function () {
 });
 
 $(document).ready(function(){
-    $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
-  var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+  $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+    var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+    if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
       $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1500); // анимируем скроолинг к элементу scroll_el
-        }
-      return false; // выключаем стандартное действие
+    }
+    return false; // выключаем стандартное действие
     });
+  var width = screen.width;
+  if ( width <= 768 ) {
+    $('.exclusive').addClass('exclusive_hide');
+    $('.plant__title').addClass('plant__title_border');
+    $('.plant__text').removeClass('plant__text_active');
+    console.log('3');
+    $('body').addClass('no-bg');
+  }
 });
 
 

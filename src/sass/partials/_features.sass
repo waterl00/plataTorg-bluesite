@@ -1,12 +1,12 @@
 .features
-	padding: 40px 0
+	padding: 40px 0px
 	color: #000
+	width: 90%
+	margin: 0 auto
 	+r(820)
 		padding: 30px 0
 	+r(700)
-		padding: 20px 0 0
-	+r(500)
-	+r(330)
+		padding: 20px 0
 
 	&__list
 		margin: 0 auto
@@ -17,16 +17,16 @@
 		-webkit-align-self: flex-end
 		align-self: flex-end
 	&__item
+		padding-top: 15%
 		text-align: center
 		position: relative
-		& + .features__item
-			margin-left: 80px
-			+r(700)
-				margin-left: 60px
-			+r(580)
-				margin-left: 40px
-			+r(460)
-				margin-left: 5px
+		width: 25%
+		background-size: 25%
+		background-repeat: no-repeat
+		background-position: 50% 0
+		&_logistick
+			background-size: 35%
+			background-position: 50% 10% 
 		p
 			color: #000000
 			font-family: Akrobat
@@ -42,19 +42,3 @@
 			+r(700)
 				font-size: 12px
 			+r(500)
-		&:before
-			display: block
-			content: ''
-			+s(gift)
-			transform: scale(.3)
-		&_logistick
-			&:before
-				+s(logistick)
-				position: relative
-				top: 9px
-		&_design
-			&:before
-				+s(design)
-		&_nature
-			&:before
-				+s(nature)
